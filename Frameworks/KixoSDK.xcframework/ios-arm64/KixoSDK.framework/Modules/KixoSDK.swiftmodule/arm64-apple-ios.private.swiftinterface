@@ -1,0 +1,291 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios26.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KixoSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+import AVFoundation
+import AVKit
+import CommonCrypto
+import Compression
+import CoreGraphics
+import CryptoKit
+import Foundation
+import ImageIO
+import NaturalLanguage
+import Network
+import ObjectiveC
+import QuartzCore
+import SQLite3
+import Security
+import Swift
+import SwiftUI
+import UIKit
+import UniformTypeIdentifiers
+import UserNotifications
+import Vision
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+import ObjectiveC.runtime
+public struct Breadcrumb : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ConfigurationOptions {
+  public var autoTrackScreens: Swift.Bool
+  public var autoTrackTaps: Swift.Bool
+  public var autoTrackNetwork: Swift.Bool
+  public var autoTrackCrashes: Swift.Bool
+  public var autoTrackSessions: Swift.Bool
+  public var autoTrackPush: Swift.Bool
+  public var pushAttributionWindowSeconds: Foundation.TimeInterval
+  public var sessionTimeout: Foundation.TimeInterval
+  public var flushInterval: Foundation.TimeInterval
+  public var flushAt: Swift.Int
+  public var maxBufferSize: Swift.Int
+  public var apiHost: Swift.String
+  public var debug: Swift.Bool
+  public var environment: Swift.String
+  public var projectId: Swift.String?
+  public var apiKeyOverride: Swift.String?
+  public var replayEnabled: Swift.Bool
+  public var replaySampleRate: Swift.Double
+  public var replayCaptureOnCellular: Swift.Bool
+  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackNetwork: Swift.Bool = true, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false)
+}
+public struct KixoDiagnostics : Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public let initialised: Swift.Bool
+  public let paused: Swift.Bool
+  public let environment: Swift.String
+  public let apiHost: Swift.String
+  public let queue: KixoSDK.KixoDiagnostics.QueueHealth
+  public struct QueueHealth : Swift.Codable, Swift.Equatable, Swift.Sendable {
+    public let bufferedEventCount: Swift.Int
+    public let bufferCap: Swift.Int
+    public let consecutiveFailures: Swift.Int
+    public let isFlushing: Swift.Bool
+    public let retryTier: Swift.String
+    public init(bufferedEventCount: Swift.Int, bufferCap: Swift.Int, consecutiveFailures: Swift.Int, isFlushing: Swift.Bool, retryTier: Swift.String)
+    public static func == (a: KixoSDK.KixoDiagnostics.QueueHealth, b: KixoSDK.KixoDiagnostics.QueueHealth) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(initialised: Swift.Bool, paused: Swift.Bool, environment: Swift.String, apiHost: Swift.String, queue: KixoSDK.KixoDiagnostics.QueueHealth)
+  public static func == (a: KixoSDK.KixoDiagnostics, b: KixoSDK.KixoDiagnostics) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KixoSDK.Kixo {
+  public typealias MoneyAmount = Swift.Double
+  public static func trackPurchase(amount: KixoSDK.Kixo.MoneyAmount, currency: Swift.String, productId: Swift.String? = nil, productName: Swift.String? = nil, quantity: Swift.Int? = nil, properties: [Swift.String : Any] = [:])
+  public static func trackSubscriptionStart(plan: Swift.String, amount: KixoSDK.Kixo.MoneyAmount, currency: Swift.String, interval: KixoSDK.SubscriptionInterval = .month, properties: [Swift.String : Any] = [:])
+  public static func trackTrialStart(plan: Swift.String, days: Swift.Int, properties: [Swift.String : Any] = [:])
+  public static func trackCancel(plan: Swift.String, reason: Swift.String? = nil, properties: [Swift.String : Any] = [:])
+  public static func trackUpgrade(fromPlan: Swift.String, toPlan: Swift.String, properties: [Swift.String : Any] = [:])
+  public static func trackSignup(method: Swift.String? = nil, plan: Swift.String? = nil, properties: [Swift.String : Any] = [:])
+  public static func trackActivation(event: Swift.String? = nil, properties: [Swift.String : Any] = [:])
+  public static func trackShare(channel: Swift.String, contentId: Swift.String? = nil, properties: [Swift.String : Any] = [:])
+  public static func trackInvite(channel: Swift.String? = nil, recipientCount: Swift.Int? = nil, properties: [Swift.String : Any] = [:])
+}
+@_hasMissingDesignatedInitializers final public class Kixo {
+  public static let shared: KixoSDK.Kixo
+  public static func configure(writeKey: Swift.String, options: KixoSDK.ConfigurationOptions = .init())
+  public static func configure(projectId: Swift.String, apiKey: Swift.String, options: KixoSDK.ConfigurationOptions = .init())
+  public static func track(_ eventName: Swift.String, properties: [Swift.String : Any] = [:])
+  public static func identify(_ userId: Swift.String, traits: [Swift.String : Any] = [:])
+  public static func group(_ groupId: Swift.String, traits: [Swift.String : Any] = [:])
+  public static func setUserProperty(_ key: Swift.String, value: Any)
+  public static func setUserProperty(_ property: KixoSDK.StandardProperty, value: Any)
+  public static func setUserProperties(_ properties: [Swift.String : Any])
+  public static func setSuperProperty(_ key: Swift.String, value: Any)
+  public static func setSuperProperties(_ properties: [Swift.String : Any])
+  public static func unsetSuperProperty(_ key: Swift.String)
+  public static func clearSuperProperties()
+  public static func setExperimentVariant(_ experimentId: Swift.String, variant: Swift.String)
+  public static func setPushToken(_ token: Swift.String, provider: KixoSDK.PushProvider = .apns)
+  public static func logPushReceived(userInfo: [Swift.AnyHashable : Any], appState: Swift.String = "foreground")
+  public static func logPushOpened(userInfo: [Swift.AnyHashable : Any], actionIdentifier: Swift.String? = nil)
+  public static func logPushDismissed(userInfo: [Swift.AnyHashable : Any])
+  public static func logPushAction(userInfo: [Swift.AnyHashable : Any], actionIdentifier: Swift.String)
+  public static func logPushTokenInvalidated(token: Swift.String, provider: KixoSDK.PushProvider = .apns)
+  public static func reset()
+  public static func diagnostics() -> KixoSDK.KixoDiagnostics
+  public static func flush()
+  @discardableResult
+  public static func flush(timeout: Foundation.TimeInterval) -> Swift.Bool
+  public static func screenView(_ name: Swift.String, properties: [Swift.String : Any] = [:])
+  public static func addBreadcrumb(category: Swift.String, message: Swift.String, data: [Swift.String : Any]? = nil, level: Swift.String = "info")
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var kxRedact: Swift.Bool {
+    get
+    set
+  }
+}
+public enum SemanticRole : Swift.UInt8, Swift.Hashable, Swift.Codable {
+  case unknown
+  case text
+  case button
+  case image
+  case input
+  case list
+  case listItem
+  case scroll
+  case container
+  case navigation
+  case media
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public enum ScreenState : Swift.String, Swift.Codable {
+  case loading
+  case empty
+  case error
+  case populated
+  case normal
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct StructuralSnapshot : Swift.Codable {
+  public let viewport: KixoSDK.StructuralSnapshot.Rect
+  public let nodes: [KixoSDK.StructuralSnapshot.Node]
+  public let safeAreaInsets: KixoSDK.StructuralSnapshot.Insets?
+  public let buildHash: Swift.String
+  public let capturedAt: Foundation.TimeInterval
+  public let v: Swift.Int
+  public let orientation: Swift.String?
+  public struct Rect : Swift.Codable, Swift.Equatable {
+    public let x: Swift.Double
+    public let y: Swift.Double
+    public let w: Swift.Double
+    public let h: Swift.Double
+    public static func == (a: KixoSDK.StructuralSnapshot.Rect, b: KixoSDK.StructuralSnapshot.Rect) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Insets : Swift.Codable, Swift.Equatable {
+    public let top: Swift.Double
+    public let bottom: Swift.Double
+    public let left: Swift.Double
+    public let right: Swift.Double
+    public static func == (a: KixoSDK.StructuralSnapshot.Insets, b: KixoSDK.StructuralSnapshot.Insets) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Node : Swift.Codable {
+    public let id: Swift.String
+    public let kind: Swift.String
+    public let parentId: Swift.String?
+    public let frame: KixoSDK.StructuralSnapshot.Rect
+    public let text: Swift.String?
+    public let bg: Swift.String?
+    public let fg: Swift.String?
+    public let radius: Swift.Double?
+    public let fontSize: Swift.Double?
+    public let bold: Swift.Bool?
+    public let redacted: Swift.Bool?
+    public let tileGcsPath: Swift.String?
+    public let thumbprint: Swift.String?
+    public let leafReason: Swift.String?
+    public let role: Swift.String?
+    public let value: Swift.String?
+    public let swiftType: Swift.String?
+    public let source: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum Kind {
+    public static let navigationBar: Swift.String
+    public static let tabBar: Swift.String
+    public static let label: Swift.String
+    public static let image: Swift.String
+    public static let button: Swift.String
+    public static let textField: Swift.String
+    public static let textView: Swift.String
+    public static let scroll: Swift.String
+    public static let cellRow: Swift.String
+    public static let container: Swift.String
+    public static let leafPixels: Swift.String
+    public static let swiftUI: Swift.String
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum SubscriptionInterval : Swift.String, Swift.Sendable {
+  case day
+  case week
+  case month
+  case year
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 14.0, macOS 12.0, *)
+@_Concurrency.MainActor @preconcurrency public struct KixoScreenModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: KixoSDK.KixoScreenModifier.Content) -> some SwiftUICore.View
+  
+  @available(iOS 14.0, macOS 12.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s7KixoSDK0A14ScreenModifierV4body7contentQr7SwiftUI05_ViewD8_ContentVyACG_tF", 0) __
+}
+@available(iOS 14.0, macOS 12.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func kixoScreen(_ name: Swift.String, properties: [Swift.String : Any] = [:]) -> some SwiftUICore.View
+  
+}
+public enum StandardProperty : Swift.String {
+  case email
+  case phone
+  case name
+  case firstName
+  case lastName
+  case avatarUrl
+  case created
+  case city
+  case country
+  case region
+  case language
+  case timezone
+  case gender
+  case birthYear
+  case plan
+  case revenue
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PushProvider : Swift.String {
+  case apns
+  case firebase
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension KixoSDK.SemanticRole : Swift.RawRepresentable {}
+extension KixoSDK.ScreenState : Swift.Equatable {}
+extension KixoSDK.ScreenState : Swift.Hashable {}
+extension KixoSDK.ScreenState : Swift.RawRepresentable {}
+extension KixoSDK.SubscriptionInterval : Swift.Equatable {}
+extension KixoSDK.SubscriptionInterval : Swift.Hashable {}
+extension KixoSDK.SubscriptionInterval : Swift.RawRepresentable {}
+@available(iOS 14.0, macOS 12.0, *)
+extension KixoSDK.KixoScreenModifier : Swift.Sendable {}
+extension KixoSDK.StandardProperty : Swift.Equatable {}
+extension KixoSDK.StandardProperty : Swift.Hashable {}
+extension KixoSDK.StandardProperty : Swift.RawRepresentable {}
+extension KixoSDK.PushProvider : Swift.Equatable {}
+extension KixoSDK.PushProvider : Swift.Hashable {}
+extension KixoSDK.PushProvider : Swift.RawRepresentable {}
