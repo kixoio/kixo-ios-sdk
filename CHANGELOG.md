@@ -11,6 +11,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial public release.
 
+**Built from** `kixo-ios-sdk@deee36482544d15d630f4c1e9fa2690a76d6bc26`
+with Xcode 26.4 / Swift 6.3.1. Reproduce with:
+
+```sh
+cd kixo-ios-sdk && git checkout deee36482544
+./Distribution/build-xcframework.sh
+shasum -a 256 build/KixoSDK.xcframework.zip
+# expect: bbbc5443f2442c1116224415f8b9656bbfccc01d9737ab59d57aa34a634568c6
+```
+
 ### Auto-tracking
 
 - Screen views (UIKit + SwiftUI) with semantic-role fingerprinting and

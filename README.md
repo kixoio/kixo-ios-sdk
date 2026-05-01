@@ -143,7 +143,7 @@ keys. Currently supported:
 | `Kixo.trackCancel(...)` | `plan`, `reason` | `cancel` |
 | `Kixo.trackUpgrade(...)` | `fromPlan`, `toPlan` | `upgrade` |
 | `Kixo.trackSignup(...)` | `method`, `plan` | `signup` |
-| `Kixo.trackActivation(...)` | `step`, `index` | `activation` |
+| `Kixo.trackActivation(...)` | `event` (label of the activation step) | `activation` |
 | `Kixo.trackShare(...)` | `channel`, `contentId` | `share` |
 | `Kixo.trackInvite(...)` | `channel`, `recipientCount` | `invite` |
 
@@ -202,29 +202,35 @@ What gets captured:
 - per-tap coordinates, gesture kind, and target `accessibilityIdentifier`,
 - structural snapshots of the view hierarchy (no pixel data for sensitive views).
 
-What is NEVER captured:
+What is **never captured automatically**:
 
-- text in fields with `.kixoSensitive()` or `secureTextEntry = true`,
-- the system keyboard,
-- views inside redaction zones marked via `.kixoRedacted()`,
-- contents of any view in a `UITextView` flagged sensitive by NLTagger PII
-  detection (emails, phone numbers, card-shaped digit runs).
+- `UITextField.isSecureTextEntry == true` — passwords, OTPs, etc.
+- `UITextField.textContentType` ∈
+  `{ .creditCardNumber, .password, .newPassword, .oneTimeCode }`.
+- `WKWebView` content (whole bounds — we can't introspect web text).
+- `AVPlayerLayer` content (whole bounds — DRM + paid-video privacy).
+- Any text run that the on-device PII filter flags — emails,
+  phone numbers, and Luhn-validated card-shaped digit sequences are
+  scrubbed via `NLTagger` over OCR text before upload.
 
-To explicitly redact a view in SwiftUI:
-
-```swift
-TextField("Card number", text: $card)
-    .kixoSensitive()             // never captured in replay
-```
-
-In UIKit:
+To explicitly mark an extra view as sensitive (UIKit):
 
 ```swift
-cardField.kx_isSensitive = true
+cardNumberLabel.kxRedact = true
 ```
 
-Replay is bandwidth-aware: by default frames upload only on Wi-Fi, are
-skipped on Low Power Mode, and are throttled when the device is thermal-warm.
+The flag is stored as an associated object so it survives view-controller
+transitions. Set it on any container — the entire visible bounds are
+rasterized into a black rect on every captured frame.
+
+> SwiftUI `.kixoSensitive()` is in flight for v1.1. Until then, host
+> SwiftUI views with sensitive content inside `UIViewControllerRepresentable`
+> or `UIViewRepresentable` and set `kxRedact` on the underlying UIKit view.
+
+Replay is bandwidth-aware: with `replayCaptureOnCellular = false`
+(the default) frames buffer to disk on cellular and only upload on
+Wi-Fi — no data lost, just radio cost gated. Uploads also pause on
+Low Power Mode and throttle when the device runs thermal-warm.
 
 ---
 
@@ -240,17 +246,17 @@ The full surface of `ConfigurationOptions`:
 | `autoTrackCrashes` | `true` | Install Mach + signal crash handlers |
 | `autoTrackSessions` | `true` | Track session start / end with idle timeout |
 | `autoTrackPush` | `true` | Track push delivery + open events |
-| `pushAttributionWindowSeconds` | `1800` | Window for attributing app opens to a push |
-| `sessionTimeout` | `30` | Idle minutes before a new session starts |
+| `pushAttributionWindowSeconds` | `1800` | Window for attributing app opens to a push (30 min) |
+| `sessionTimeout` | `30` | Idle **seconds** before a new session starts. Bump to `1800` for the 30-min industry default. |
 | `flushInterval` | `30` | Seconds between event-batch flushes |
 | `flushAt` | `20` | Flush immediately when the queue exceeds this |
-| `maxBufferSize` | `1000` | Hard cap on the event queue while offline |
-| `apiHost` | `https://sdk.kixo.io` | Override only if Kixo gives you a custom host |
-| `debug` | `false` | Print verbose `[Kixo]` log lines to console |
-| `environment` | `"production"` | Tag every event with this environment string |
+| `maxBufferSize` | `200` | Hard cap on the event queue while offline |
+| `apiHost` | auto | Resolved per environment: `sdk.dev.kixo.io` (development), `sdk.staging.kixo.io` (staging), `sdk.kixo.io` (production). Override only for self-hosted backends. |
+| `debug` | auto | Print verbose `[Kixo]` log lines. Defaults to `true` in Xcode Debug builds, `false` in TestFlight / App Store. |
+| `environment` | auto | Auto-detected: `development` (Sim / Debug), `staging` (TestFlight sandbox), `production` (App Store). Pass any string to override. |
 | `replayEnabled` | `false` | Enable session replay |
-| `replaySampleRate` | `1.0` | Fraction of sessions captured (0.0–1.0) |
-| `replayCaptureOnCellular` | `false` | If `false`, replay only uploads on Wi-Fi |
+| `replaySampleRate` | `0.05` | Fraction of sessions captured (0.0–1.0). 5% default keeps storage / bandwidth modest; bump for low-traffic apps. |
+| `replayCaptureOnCellular` | `false` | If `false`, replay frames stay on disk on cellular and upload on Wi-Fi |
 
 ---
 
@@ -267,9 +273,8 @@ The full surface of `ConfigurationOptions`:
   initial `Kixo.configure(...)` call behind your own consent toggle —
   if the SDK is never configured, no data is collected. (A first-class
   `Kixo.optOut()` API ships in 1.1.)
-- All ingest endpoints terminate at our EU-region data plane; storage is
-  ClickHouse + PostgreSQL (Cloud SQL). See your account's *Data Processing
-  Addendum* for full details.
+- Ingest endpoints + storage region are configured per-tenant; see your
+  account's *Data Processing Addendum* for region + retention specifics.
 - The SDK never reads from the system pasteboard, photo library, contacts,
   or location services.
 
