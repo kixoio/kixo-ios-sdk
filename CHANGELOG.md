@@ -7,6 +7,65 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] — 2026-05-14
+
+iOS Wave 1 — security fix + App Store privacy compliance.
+
+**Built from** `kixo-ios-sdk@7983255` with Xcode 26.4 / Swift 6.3.1.
+
+### Fixed
+
+- **Environment auto-detect leak (security)** — Removed `#if DEBUG`,
+  `targetEnvironment(simulator)`, and TestFlight-sandbox-receipt
+  detection from `EnvironmentDetector.detect()`. The SDK is source-
+  distributed inside the binary (`BUILD_LIBRARY_FOR_DISTRIBUTION=YES`
+  swiftinterface preserves the macros at the **customer's** build-
+  context), which meant a customer's Xcode Debug build of THEIR app
+  routed Kixo events to `sdk.dev.kixo.io` (Kixo's internal dev
+  backend) and TestFlight builds routed to staging. Customer-
+  distributable debug + sandbox builds were leaking event data to
+  a backend the customer doesn't have an account on.
+
+  Now: `EnvironmentDetector.detect()` always returns `"production"`.
+  The only path to `"development"` or `"staging"` is the operator
+  passing `ConfigurationOptions(environment: "development")`
+  explicitly. Identical class of bug to Android v0.1.2's
+  FLAG_DEBUGGABLE removal.
+
+  Drop-in upgrade — no customer code changes required. Existing
+  `ConfigurationOptions(environment: "...")` explicit overrides
+  keep working.
+
+### Added
+
+- **Privacy Manifest (`PrivacyInfo.xcprivacy`)** — Apple has
+  required this for third-party SDKs since May 1, 2024. Without
+  it, every Kixo customer's app fails Apple's privacy-manifest
+  validation at App Store submission. We were a new-customer
+  App Store blocker.
+
+  Declares: `NSPrivacyTracking=false`, no tracking domains, 5
+  collected data type categories (DeviceID, ProductInteraction,
+  CrashData, PerformanceData, OtherDiagnosticData — all marked
+  "linked to user within the customer's app context, NOT used
+  for tracking across apps"), 4 required-reason API categories
+  with the correct reason codes (UserDefaults `CA92.1`, DiskSpace
+  `E174.1`, SystemBootTime `35F9.1`, FileTimestamp `C617.1`).
+
+  Bundled via SwiftPM `resources: [.copy("PrivacyInfo.xcprivacy")]`
+  in the source target's `Package.swift`. The XCFramework includes
+  the file in its main bundle automatically.
+
+### Changed
+
+- `sdkVersion` runtime stamp `0.1.0` → `1.0.1`. The source repo
+  had drifted from the published `v1.0.0` tag — every emitted
+  event payload's `sdk_version` field now matches the SwiftPM
+  resolved tag. Cosmetic but eliminates the "what version am I
+  actually running" support escalation.
+
+---
+
 ## [1.0.0] — 2026-05-01
 
 Initial public release.

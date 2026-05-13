@@ -93,6 +93,7 @@ extension KixoSDK.Kixo {
   public static func configure(writeKey: Swift.String, options: KixoSDK.ConfigurationOptions = .init())
   public static func configure(projectId: Swift.String, apiKey: Swift.String, options: KixoSDK.ConfigurationOptions = .init())
   public static func track(_ eventName: Swift.String, properties: [Swift.String : Any] = [:])
+  public static func markGoal(_ name: Swift.String, value: Swift.Double? = nil, currency: Swift.String? = nil, properties: [Swift.String : Any] = [:])
   public static func identify(_ userId: Swift.String, traits: [Swift.String : Any] = [:])
   public static func group(_ groupId: Swift.String, traits: [Swift.String : Any] = [:])
   public static func setUserProperty(_ key: Swift.String, value: Any)
