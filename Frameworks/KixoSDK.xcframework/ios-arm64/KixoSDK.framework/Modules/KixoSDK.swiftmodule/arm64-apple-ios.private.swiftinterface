@@ -10,6 +10,7 @@ import CoreGraphics
 import CryptoKit
 import Foundation
 import ImageIO
+import MetricKit
 import NaturalLanguage
 import Network
 import ObjectiveC
@@ -52,7 +53,7 @@ public struct ConfigurationOptions {
   public var replayEnabled: Swift.Bool
   public var replaySampleRate: Swift.Double
   public var replayCaptureOnCellular: Swift.Bool
-  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackNetwork: Swift.Bool = true, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false)
+  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackNetwork: Swift.Bool = false, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false)
 }
 public struct KixoDiagnostics : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public let initialised: Swift.Bool

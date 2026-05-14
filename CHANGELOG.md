@@ -7,6 +7,108 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.2] — 2026-05-14
+
+iOS Wave 2 — autoTrackNetwork privacy hardening + MetricKit hang/crash
+diagnostics + retire async-signal-unsafe crash path.
+
+**Built from** `kixo-ios-sdk@cab2873` with Xcode 26.4 / Swift 6.3.1.
+**XCFramework sha256:**
+`2aef21fb4cac62fc0bcc9b330c438cbc910639d94b616284b1597d47dafc2df3`.
+
+### Changed (breaking default)
+
+- **`autoTrackNetwork` default flipped `true` → `false` (privacy).**
+  The pre-Wave-2 default reported `URLSession.dataTask` URLs on
+  every request, including raw path segments. Customer apps with
+  REST routes like `/api/users/<email>` or `/v1/orders/<uuid>`
+  were leaking end-user PII into every event — even when the
+  customer's app had no separate `identify()` call. Customers
+  who still want network tracking opt in explicitly:
+
+  ```swift
+  Kixo.configure(
+      projectId: "kx_proj_...",
+      apiKey: "kx_key_...",
+      options: ConfigurationOptions(autoTrackNetwork: true)
+  )
+  ```
+
+  Same posture as Sentry's HTTP-breadcrumb default and the
+  Android SDK's v0.1.2 deprecation of the equivalent flag.
+
+### Added
+
+- **`URLPathSanitizer`** — when `autoTrackNetwork: true` is
+  explicitly opted into, every captured URL now passes through
+  a path sanitiser before it leaves the device. Replaces:
+
+  | Path segment shape                  | Placeholder |
+  | ----------------------------------- | ----------- |
+  | Numeric, ≥6 digits                  | `:id`       |
+  | RFC-4122 UUID (8-4-4-4-12 hex)      | `:uuid`     |
+  | Contains `@…`                       | `:email`    |
+  | Hex-only, ≥16 chars                 | `:hex`      |
+  | Alphanumeric, ≥20 chars (mixed)     | `:token`    |
+
+  Host is preserved (it's the API endpoint identity, not
+  customer PII). Scheme + port + `?query` are dropped entirely.
+  Conservative by design — over-sanitisation is preferred over
+  leak. Short version + date segments (`/v1`, `/2024`) stay raw.
+
+- **MetricKit hang + crash diagnostics
+  (`Diagnostics/MetricKitSubscriber.swift`).** Subscribes to
+  `MXMetricManager.shared` and routes `MXDiagnosticPayload.hangDiagnostics`
+  + `.crashDiagnostics` into the standard event-queue path:
+
+  - Hangs (main thread frozen ≥250ms) → `event_type=crash`,
+    `event_name=hang`, properties include `frozen_ms`,
+    `stack_trace` (full Apple call-stack-tree JSON),
+    `app_version`, `os_version`, `device_type`, `historical=true`.
+  - Crashes (SIGABRT / SIGSEGV / SIGILL / etc.) → `event_type=crash`,
+    `event_name=metric_kit_crash`, properties include `signal_name`,
+    `signal_code`, `exception_type`, `termination_reason`,
+    `stack_trace`, `historical=true`, `metric_kit=true`.
+
+  Apple delivers these payloads either daily (~24h post-event) or
+  on the next launch after the host app's most recent crash.
+  Stack traces include addresses the SDK could never capture from
+  inside a Swift runloop observer.
+
+### Fixed
+
+- **Crash delivery reliability.** Removed the POSIX signal
+  handlers in `CrashTracker` that called `enqueue + flush`
+  synchronously from inside the signal handler. The handler
+  required `malloc`, the Swift runtime, `JSONEncoder`, and
+  `URLSession` — all of which are async-signal-unsafe
+  (`man 2 sigaction`). On a real crash the in-handler path
+  almost always either deadlocked the dying thread or silently
+  corrupted state, so the crash event never actually reached the
+  backend in production.
+
+  Replacement is MetricKit (above) — the OS-blessed iOS path
+  used by Sentry, Bugsnag, Firebase Crashlytics, and Datadog
+  Mobile as their canonical source. Trade-off accepted: crash
+  events show up ~24h delayed (or on the next launch) instead of
+  in real time. The "real-time" claim of the old path was
+  illusory anyway — most signal-handler crash reports never
+  landed.
+
+  The `CrashTracker` type itself stays callable for source-compat;
+  the `init(handler:)` no longer wires up signal handlers. No
+  customer-code changes required.
+
+### Notes
+
+- Privacy Manifest (`PrivacyInfo.xcprivacy`) from v1.0.1 is
+  preserved in the v1.0.2 XCFramework — Apple's third-party-SDK
+  requirement is still in force.
+- `sdkVersion` payload stamp bumped `1.0.1` → `1.0.2` in
+  `Transport.swift`.
+
+---
+
 ## [1.0.1] — 2026-05-14
 
 iOS Wave 1 — security fix + App Store privacy compliance.
