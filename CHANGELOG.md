@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.3] — 2026-05-17
+
+`Kixo.group()` shape cleanup — mirrors Android v0.1.6.
+
+**Built from** `kixo-ios-sdk@85b11b7` with Xcode 26.4 / Swift 6.3.1.
+**XCFramework sha256:**
+`c1b619b25f36da6110e5ee3e1541fbf565bb1885ff65cf209def04a7d69f971a`.
+
+### Fixed
+
+- **`Kixo.group(groupId, traits)` no longer injects `group_id` into
+  the properties payload.** `group_id` rides on the event envelope
+  via the same identity machinery as `user_id`; injecting it as a
+  property mirrored the v1.0.2-era setUserProperty + identify
+  shape bugs we fixed on the Android side. The leak was cosmetic
+  on the current backend (group events don't write to
+  `audience_properties`) but the pattern was incorrect.
+
+### Drop-in upgrade
+
+`.package(url: ..., from: "1.0.0")` auto-resolves to `1.0.3`; no
+code changes required on the customer side.
+
+---
+
 ## [1.0.2] — 2026-05-14
 
 iOS Wave 2 — autoTrackNetwork privacy hardening + MetricKit hang/crash

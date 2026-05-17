@@ -102,6 +102,11 @@ Kixo.setUserProperties([
     "lifetimeOrders": 12
 ])
 
+// Boolean flags — tag a user for segmentation & campaigns
+Kixo.setUserProperty("subscribe", value: true)   // segment: subscribe = true
+Kixo.setUserProperty("vip", value: true)
+Kixo.setUserProperty("beta_tester", value: false)
+
 // On sign-out — clears identity + flushes the queue.
 Kixo.reset()
 ```
@@ -113,7 +118,10 @@ The standard properties Kixo recognises today (case must match):
 `$gender`, `$birth_year`, `$plan`, `$revenue`.
 
 Any other key you set on `setUserProperty` is stored as a custom trait
-and is queryable from segments and the AI chat.
+and is queryable from segments and the AI chat. Boolean values are the
+cleanest way to **tag a user** — `setUserProperty("subscribe", value: true)`
+lets the chat say *"send a welcome email to users where subscribe is true"*
+and Kixo builds the segment automatically.
 
 ---
 
