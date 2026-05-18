@@ -7,6 +7,67 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.6] — 2026-05-18
+
+Expand the `StandardProperty` reserved-namespace catalog from
+16 properties to **37 properties across 8 packs** — 3 universal
++ 5 B2B-vertical. The dashboard auto-detects each project's
+vertical and renders the corresponding pack's audience-explorer UI.
+
+**XCFramework sha256:**
+`d1d13df6f8dac9a28f83ece09664f2c33d3397096abf8da4cf6ebefbf972d206`.
+
+### Added
+
+- **3 universal packs** (always rendered in the dashboard):
+  - `identity` (6): `$email`, `$phone`, `$name`, `$first_name`, `$last_name`, `$avatar_url`
+  - `geo` (6): `$country`, `$city`, `$region`, `$timezone`, `$language`, `$locale`
+  - `lifecycle` (2): `$created`, `$last_seen`
+
+- **5 vertical packs** (rendered when at least one property in the pack is populated):
+  - `saas` (5): `$plan`, `$subscription_status`, `$trial_ends`, `$mrr`, `$subscription_started`
+  - `ecommerce` (6): `$lifetime_orders`, `$lifetime_revenue`, `$aov`, `$last_purchase`, `$first_purchase`, `$cart_abandoned_count`
+  - `media` (4): `$content_tier`, `$subscribed_categories`, `$watch_time_total`, `$last_played`
+  - `marketplace` (5): `$seller_tier`, `$buyer_tier`, `$listings_count`, `$reviews_count`, `$verified`
+  - `loyalty` (3): `$loyalty_points`, `$vip_level`, `$referral_count`
+
+- **Nested `StandardProperty.Pack` enum** + `public var pack: Pack`
+  computed property so segmentation / dashboard code can group
+  properties by pack at the call site without hard-coding the
+  mapping.
+
+### Removed (no back-compat shim — pre-prod)
+
+- `StandardProperty.gender` (`$gender`) — low signal for B2B audiences.
+- `StandardProperty.birthYear` (`$birth_year`) — same rationale.
+- `StandardProperty.revenue` (`$revenue`) — replaced by the more
+  explicit `$lifetime_revenue` in the `ecommerce` pack.
+
+Customers who set `$gender` / `$birth_year` / `$revenue` via the
+typed enum form (`Kixo.setUserProperty(.gender, …)`) will see a
+compile-time error and need to migrate. String-key form
+(`Kixo.setUserProperty("$revenue", …)`) silently stops being
+promoted to a profile column and is stored as a custom trait.
+
+### Notes
+
+- `sdkVersion` runtime stamp bumped `1.0.5` → `1.0.6` in
+  `Transport.swift`.
+- This catalog mirrors Android (`kixo/src/main/kotlin/io/kixo/sdk/
+  StandardProperty.kt`) and Web
+  (`kixo-web-sdk/src/core/standard-properties.ts`) byte-for-byte;
+  the three SDKs bump together so the backend pivot and dashboard
+  column registry stay coherent.
+
+### Drop-in upgrade
+
+`.package(url: ..., from: "1.0.0")` auto-resolves to `1.0.6` on
+the next `swift package update`. Customer code using the typed
+enum form for retained cases (`Kixo.setUserProperty(.email, value: …)`)
+continues to work unchanged.
+
+---
+
 ## [1.0.5] — 2026-05-18
 
 Restore the 569Xlprefix convention on `StandardProperty` rawValues

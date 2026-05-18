@@ -251,16 +251,55 @@ public enum StandardProperty : Swift.String {
   case firstName
   case lastName
   case avatarUrl
-  case created
-  case city
   case country
+  case city
   case region
-  case language
   case timezone
-  case gender
-  case birthYear
+  case language
+  case locale
+  case created
+  case lastSeen
   case plan
-  case revenue
+  case subscriptionStatus
+  case trialEnds
+  case mrr
+  case subscriptionStarted
+  case lifetimeOrders
+  case lifetimeRevenue
+  case aov
+  case lastPurchase
+  case firstPurchase
+  case cartAbandonedCount
+  case contentTier
+  case subscribedCategories
+  case watchTimeTotal
+  case lastPlayed
+  case sellerTier
+  case buyerTier
+  case listingsCount
+  case reviewsCount
+  case verified
+  case loyaltyPoints
+  case vipLevel
+  case referralCount
+  public enum Pack : Swift.String {
+    case identity
+    case geo
+    case lifecycle
+    case saas
+    case ecommerce
+    case media
+    case marketplace
+    case loyalty
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var pack: KixoSDK.StandardProperty.Pack {
+    get
+  }
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -288,6 +327,9 @@ extension KixoSDK.KixoScreenModifier : Swift.Sendable {}
 extension KixoSDK.StandardProperty : Swift.Equatable {}
 extension KixoSDK.StandardProperty : Swift.Hashable {}
 extension KixoSDK.StandardProperty : Swift.RawRepresentable {}
+extension KixoSDK.StandardProperty.Pack : Swift.Equatable {}
+extension KixoSDK.StandardProperty.Pack : Swift.Hashable {}
+extension KixoSDK.StandardProperty.Pack : Swift.RawRepresentable {}
 extension KixoSDK.PushProvider : Swift.Equatable {}
 extension KixoSDK.PushProvider : Swift.Hashable {}
 extension KixoSDK.PushProvider : Swift.RawRepresentable {}

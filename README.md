@@ -30,7 +30,7 @@ notification, and (optionally) a privacy-aware visual replay of each session.
 dependencies: [
     .package(
         url: "https://<git-host>/kuicktech/kixo-ios-sdk-release.git",
-        from: "1.0.0"
+        from: "1.0.6"
     ),
 ],
 targets: [
@@ -84,9 +84,12 @@ That's it. With no further configuration the SDK auto-tracks:
 // When you know who the user is (e.g. after sign-in)
 // Reserved standard property keys carry a `$`-prefix (Mixpanel
 // convention) so they namespace away from your own custom traits.
-Kixo.identify("acct_42xyz", traits: [
-    "$plan":        "pro",
-    "signupCohort": "2026-Q1"  // custom trait, no $-prefix
+Kixo.identify("user_123", traits: [
+    "$email": "jane@example.com",       // identity
+    "$name":  "Jane Doe",                // identity
+    "$plan":  "pro",                     // saas pack
+    "$lifetime_orders": 12,              // ecommerce pack
+    "signup_source": "twitter_ad",       // custom trait
 ])
 
 // Standardized profile properties — these populate the audience
@@ -99,9 +102,10 @@ Kixo.setUserProperty(.plan, value: "pro")
 
 // Or in bulk — reserved keys with `$`-prefix, custom traits bare
 Kixo.setUserProperties([
-    "$email":         "user@example.com",
-    "$plan":          "pro",
-    "lifetimeOrders": 12
+    "$email":           "user@example.com",
+    "$plan":            "pro",
+    "$lifetime_orders": 12,
+    "signup_source":    "twitter_ad"
 ])
 
 // Boolean flags — tag a user for segmentation & campaigns
@@ -113,17 +117,32 @@ Kixo.setUserProperty("beta_tester", value: false)
 Kixo.reset()
 ```
 
-The standard properties Kixo recognises today (case must match):
+### Reserved-namespace catalog (37 properties across 8 packs)
 
-`$email`, `$phone`, `$name`, `$first_name`, `$last_name`, `$avatar_url`,
-`$created`, `$city`, `$country`, `$region`, `$language`, `$timezone`,
-`$gender`, `$birth_year`, `$plan`, `$revenue`.
+The catalog is split into three **universal** packs (always rendered
+in the dashboard) and five **vertical** packs (rendered only when at
+least one property in the pack is populated — the dashboard
+auto-detects each project's vertical):
 
-Any other key you set on `setUserProperty` is stored as a custom trait
-and is queryable from segments and the AI chat. Boolean values are the
-cleanest way to **tag a user** — `setUserProperty("subscribe", value: true)`
-lets the chat say *"send a welcome email to users where subscribe is true"*
-and Kixo builds the segment automatically.
+| Pack | Kind | Keys |
+|---|---|---|
+| `identity` | universal | `$email`, `$phone`, `$name`, `$first_name`, `$last_name`, `$avatar_url` |
+| `geo` | universal | `$country`, `$city`, `$region`, `$timezone`, `$language`, `$locale` |
+| `lifecycle` | universal | `$created`, `$last_seen` |
+| `saas` | vertical | `$plan`, `$subscription_status`, `$trial_ends`, `$mrr`, `$subscription_started` |
+| `ecommerce` | vertical | `$lifetime_orders`, `$lifetime_revenue`, `$aov`, `$last_purchase`, `$first_purchase`, `$cart_abandoned_count` |
+| `media` | vertical | `$content_tier`, `$subscribed_categories`, `$watch_time_total`, `$last_played` |
+| `marketplace` | vertical | `$seller_tier`, `$buyer_tier`, `$listings_count`, `$reviews_count`, `$verified` |
+| `loyalty` | vertical | `$loyalty_points`, `$vip_level`, `$referral_count` |
+
+Don't see your pattern? Use bare keys for custom traits — they
+surface in the dashboard's *Custom Traits* panel without polluting
+profile columns.
+
+Boolean values are the cleanest way to **tag a user** —
+`setUserProperty("subscribe", value: true)` lets the chat say
+*"send a welcome email to users where subscribe is true"* and Kixo
+builds the segment automatically.
 
 ---
 

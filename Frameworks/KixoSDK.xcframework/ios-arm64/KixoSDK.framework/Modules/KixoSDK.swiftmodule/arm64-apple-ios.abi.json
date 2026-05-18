@@ -9995,7 +9995,10 @@
             "declKind": "EnumElement",
             "usr": "s:7KixoSDK16StandardPropertyO5emailyA2CmF",
             "mangledName": "$s7KixoSDK16StandardPropertyO5emailyA2CmF",
-            "moduleName": "KixoSDK"
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -10184,8 +10187,8 @@
           },
           {
             "kind": "Var",
-            "name": "created",
-            "printedName": "created",
+            "name": "country",
+            "printedName": "country",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -10215,9 +10218,12 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7KixoSDK16StandardPropertyO7createdyA2CmF",
-            "mangledName": "$s7KixoSDK16StandardPropertyO7createdyA2CmF",
-            "moduleName": "KixoSDK"
+            "usr": "s:7KixoSDK16StandardPropertyO7countryyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO7countryyA2CmF",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -10254,46 +10260,6 @@
             "declKind": "EnumElement",
             "usr": "s:7KixoSDK16StandardPropertyO4cityyA2CmF",
             "mangledName": "$s7KixoSDK16StandardPropertyO4cityyA2CmF",
-            "moduleName": "KixoSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "country",
-            "printedName": "country",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StandardProperty",
-                    "printedName": "KixoSDK.StandardProperty",
-                    "usr": "s:7KixoSDK16StandardPropertyO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KixoSDK.StandardProperty.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StandardProperty",
-                        "printedName": "KixoSDK.StandardProperty",
-                        "usr": "s:7KixoSDK16StandardPropertyO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7KixoSDK16StandardPropertyO7countryyA2CmF",
-            "mangledName": "$s7KixoSDK16StandardPropertyO7countryyA2CmF",
             "moduleName": "KixoSDK"
           },
           {
@@ -10335,43 +10301,6 @@
           },
           {
             "kind": "Var",
-            "name": "language",
-            "printedName": "language",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "StandardProperty",
-                    "printedName": "KixoSDK.StandardProperty",
-                    "usr": "s:7KixoSDK16StandardPropertyO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KixoSDK.StandardProperty.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "StandardProperty",
-                        "printedName": "KixoSDK.StandardProperty",
-                        "usr": "s:7KixoSDK16StandardPropertyO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7KixoSDK16StandardPropertyO8languageyA2CmF",
-            "mangledName": "$s7KixoSDK16StandardPropertyO8languageyA2CmF",
-            "moduleName": "KixoSDK"
-          },
-          {
-            "kind": "Var",
             "name": "timezone",
             "printedName": "timezone",
             "children": [
@@ -10409,8 +10338,8 @@
           },
           {
             "kind": "Var",
-            "name": "gender",
-            "printedName": "gender",
+            "name": "language",
+            "printedName": "language",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -10440,14 +10369,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7KixoSDK16StandardPropertyO6genderyA2CmF",
-            "mangledName": "$s7KixoSDK16StandardPropertyO6genderyA2CmF",
+            "usr": "s:7KixoSDK16StandardPropertyO8languageyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO8languageyA2CmF",
             "moduleName": "KixoSDK"
           },
           {
             "kind": "Var",
-            "name": "birthYear",
-            "printedName": "birthYear",
+            "name": "locale",
+            "printedName": "locale",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -10477,9 +10406,89 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7KixoSDK16StandardPropertyO9birthYearyA2CmF",
-            "mangledName": "$s7KixoSDK16StandardPropertyO9birthYearyA2CmF",
+            "usr": "s:7KixoSDK16StandardPropertyO6localeyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO6localeyA2CmF",
             "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "created",
+            "printedName": "created",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO7createdyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO7createdyA2CmF",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastSeen",
+            "printedName": "lastSeen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO8lastSeenyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO8lastSeenyA2CmF",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -10516,12 +10525,15 @@
             "declKind": "EnumElement",
             "usr": "s:7KixoSDK16StandardPropertyO4planyA2CmF",
             "mangledName": "$s7KixoSDK16StandardPropertyO4planyA2CmF",
-            "moduleName": "KixoSDK"
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
-            "name": "revenue",
-            "printedName": "revenue",
+            "name": "subscriptionStatus",
+            "printedName": "subscriptionStatus",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -10551,11 +10563,1280 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7KixoSDK16StandardPropertyO7revenueyA2CmF",
-            "mangledName": "$s7KixoSDK16StandardPropertyO7revenueyA2CmF",
+            "usr": "s:7KixoSDK16StandardPropertyO18subscriptionStatusyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO18subscriptionStatusyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "trialEnds",
+            "printedName": "trialEnds",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO9trialEndsyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO9trialEndsyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "mrr",
+            "printedName": "mrr",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO3mrryA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO3mrryA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "subscriptionStarted",
+            "printedName": "subscriptionStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO19subscriptionStartedyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO19subscriptionStartedyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "lifetimeOrders",
+            "printedName": "lifetimeOrders",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO14lifetimeOrdersyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO14lifetimeOrdersyA2CmF",
             "moduleName": "KixoSDK",
             "declAttributes": [
               "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lifetimeRevenue",
+            "printedName": "lifetimeRevenue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO15lifetimeRevenueyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO15lifetimeRevenueyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "aov",
+            "printedName": "aov",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO3aovyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO3aovyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "lastPurchase",
+            "printedName": "lastPurchase",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO12lastPurchaseyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO12lastPurchaseyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "firstPurchase",
+            "printedName": "firstPurchase",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO13firstPurchaseyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO13firstPurchaseyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "cartAbandonedCount",
+            "printedName": "cartAbandonedCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO18cartAbandonedCountyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO18cartAbandonedCountyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "contentTier",
+            "printedName": "contentTier",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO11contentTieryA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO11contentTieryA2CmF",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subscribedCategories",
+            "printedName": "subscribedCategories",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO20subscribedCategoriesyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO20subscribedCategoriesyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "watchTimeTotal",
+            "printedName": "watchTimeTotal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO14watchTimeTotalyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO14watchTimeTotalyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "lastPlayed",
+            "printedName": "lastPlayed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO10lastPlayedyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO10lastPlayedyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sellerTier",
+            "printedName": "sellerTier",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO10sellerTieryA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO10sellerTieryA2CmF",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buyerTier",
+            "printedName": "buyerTier",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO9buyerTieryA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO9buyerTieryA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "listingsCount",
+            "printedName": "listingsCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO13listingsCountyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO13listingsCountyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "reviewsCount",
+            "printedName": "reviewsCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO12reviewsCountyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO12reviewsCountyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "verified",
+            "printedName": "verified",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO8verifiedyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO8verifiedyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "loyaltyPoints",
+            "printedName": "loyaltyPoints",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO13loyaltyPointsyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO13loyaltyPointsyA2CmF",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vipLevel",
+            "printedName": "vipLevel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO8vipLevelyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO8vipLevelyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "referralCount",
+            "printedName": "referralCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KixoSDK.StandardProperty.Type) -> KixoSDK.StandardProperty",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StandardProperty",
+                    "printedName": "KixoSDK.StandardProperty",
+                    "usr": "s:7KixoSDK16StandardPropertyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KixoSDK.StandardProperty.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StandardProperty",
+                        "printedName": "KixoSDK.StandardProperty",
+                        "usr": "s:7KixoSDK16StandardPropertyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7KixoSDK16StandardPropertyO13referralCountyA2CmF",
+            "mangledName": "$s7KixoSDK16StandardPropertyO13referralCountyA2CmF",
+            "moduleName": "KixoSDK"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Pack",
+            "printedName": "Pack",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "identity",
+                "printedName": "identity",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO8identityyA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO8identityyA2EmF",
+                "moduleName": "KixoSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "geo",
+                "printedName": "geo",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO3geoyA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO3geoyA2EmF",
+                "moduleName": "KixoSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "lifecycle",
+                "printedName": "lifecycle",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO9lifecycleyA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO9lifecycleyA2EmF",
+                "moduleName": "KixoSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "saas",
+                "printedName": "saas",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO4saasyA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO4saasyA2EmF",
+                "moduleName": "KixoSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ecommerce",
+                "printedName": "ecommerce",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO9ecommerceyA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO9ecommerceyA2EmF",
+                "moduleName": "KixoSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "media",
+                "printedName": "media",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO5mediayA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO5mediayA2EmF",
+                "moduleName": "KixoSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "marketplace",
+                "printedName": "marketplace",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO11marketplaceyA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO11marketplaceyA2EmF",
+                "moduleName": "KixoSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "loyalty",
+                "printedName": "loyalty",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KixoSDK.StandardProperty.Pack.Type) -> KixoSDK.StandardProperty.Pack",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KixoSDK.StandardProperty.Pack.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Pack",
+                            "printedName": "KixoSDK.StandardProperty.Pack",
+                            "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO7loyaltyyA2EmF",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO7loyaltyyA2EmF",
+                "moduleName": "KixoSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KixoSDK.StandardProperty.Pack?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "KixoSDK.StandardProperty.Pack",
+                        "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO8rawValueAESgSS_tcfc",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO8rawValueAESgSS_tcfc",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO8rawValueSSvp",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4PackO8rawValueSSvp",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7KixoSDK16StandardPropertyO4PackO8rawValueSSvg",
+                    "mangledName": "$s7KixoSDK16StandardPropertyO4PackO8rawValueSSvg",
+                    "moduleName": "KixoSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7KixoSDK16StandardPropertyO4PackO",
+            "mangledName": "$s7KixoSDK16StandardPropertyO4PackO",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pack",
+            "printedName": "pack",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Pack",
+                "printedName": "KixoSDK.StandardProperty.Pack",
+                "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KixoSDK16StandardPropertyO4packAC4PackOvp",
+            "mangledName": "$s7KixoSDK16StandardPropertyO4packAC4PackOvp",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "KixoSDK.StandardProperty.Pack",
+                    "usr": "s:7KixoSDK16StandardPropertyO4PackO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK16StandardPropertyO4packAC4PackOvg",
+                "mangledName": "$s7KixoSDK16StandardPropertyO4packAC4PackOvg",
+                "moduleName": "KixoSDK",
+                "accessorKind": "get"
+              }
             ]
           },
           {
@@ -14047,126 +15328,273 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 2339,
       "length": 8,
       "value": "\"$email\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 2370,
       "length": 8,
       "value": "\"$phone\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1056,
+      "offset": 2401,
       "length": 7,
       "value": "\"$name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1086,
+      "offset": 2431,
       "length": 13,
       "value": "\"$first_name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 2467,
       "length": 12,
       "value": "\"$last_name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1157,
+      "offset": 2502,
       "length": 13,
       "value": "\"$avatar_url\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1193,
-      "length": 10,
-      "value": "\"$created\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1256,
-      "length": 7,
-      "value": "\"$city\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1286,
+      "offset": 2571,
       "length": 10,
       "value": "\"$country\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1319,
+      "offset": 2604,
+      "length": 7,
+      "value": "\"$city\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 2634,
       "length": 9,
       "value": "\"$region\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1351,
-      "length": 11,
-      "value": "\"$language\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 2666,
       "length": 11,
       "value": "\"$timezone\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1419,
+      "offset": 2700,
+      "length": 11,
+      "value": "\"$language\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 2734,
       "length": 9,
-      "value": "\"$gender\""
+      "value": "\"$locale\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1451,
-      "length": 13,
-      "value": "\"$birth_year\""
+      "offset": 2805,
+      "length": 10,
+      "value": "\"$created\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1487,
+      "offset": 2870,
+      "length": 12,
+      "value": "\"$last_seen\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 2980,
       "length": 7,
       "value": "\"$plan\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1546,
-      "length": 10,
-      "value": "\"$revenue\""
+      "offset": 3020,
+      "length": 22,
+      "value": "\"$subscription_status\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1701,
+      "offset": 3075,
+      "length": 13,
+      "value": "\"$trial_ends\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3121,
+      "length": 6,
+      "value": "\"$mrr\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3160,
+      "length": 23,
+      "value": "\"$subscription_started\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3255,
+      "length": 18,
+      "value": "\"$lifetime_orders\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3306,
+      "length": 19,
+      "value": "\"$lifetime_revenue\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3358,
+      "length": 6,
+      "value": "\"$aov\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3397,
+      "length": 16,
+      "value": "\"$last_purchase\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3446,
+      "length": 17,
+      "value": "\"$first_purchase\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3496,
+      "length": 23,
+      "value": "\"$cart_abandoned_count\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3586,
+      "length": 15,
+      "value": "\"$content_tier\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3634,
+      "length": 24,
+      "value": "\"$subscribed_categories\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3691,
+      "length": 19,
+      "value": "\"$watch_time_total\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3743,
+      "length": 14,
+      "value": "\"$last_played\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3830,
+      "length": 14,
+      "value": "\"$seller_tier\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3877,
+      "length": 13,
+      "value": "\"$buyer_tier\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3923,
+      "length": 17,
+      "value": "\"$listings_count\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 3973,
+      "length": 16,
+      "value": "\"$reviews_count\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 4022,
+      "length": 11,
+      "value": "\"$verified\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 4102,
+      "length": 17,
+      "value": "\"$loyalty_points\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 4152,
+      "length": 12,
+      "value": "\"$vip_level\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 4197,
+      "length": 17,
+      "value": "\"$referral_count\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 6046,
       "length": 6,
       "value": "\"apns\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1728,
+      "offset": 6073,
       "length": 10,
       "value": "\"firebase\""
     },
