@@ -82,9 +82,11 @@ That's it. With no further configuration the SDK auto-tracks:
 
 ```swift
 // When you know who the user is (e.g. after sign-in)
+// Reserved standard property keys carry a `$`-prefix (Mixpanel
+// convention) so they namespace away from your own custom traits.
 Kixo.identify("acct_42xyz", traits: [
-    "plan": "pro",
-    "signupCohort": "2026-Q1"
+    "$plan":        "pro",
+    "signupCohort": "2026-Q1"  // custom trait, no $-prefix
 ])
 
 // Standardized profile properties — these populate the audience
@@ -95,10 +97,10 @@ Kixo.setUserProperty(.firstName, value: "Anna")
 Kixo.setUserProperty(.country, value: "US")
 Kixo.setUserProperty(.plan, value: "pro")
 
-// Or in bulk
+// Or in bulk — reserved keys with `$`-prefix, custom traits bare
 Kixo.setUserProperties([
-    "email": "user@example.com",
-    "plan":  "pro",
+    "$email":         "user@example.com",
+    "$plan":          "pro",
     "lifetimeOrders": 12
 ])
 
@@ -113,9 +115,9 @@ Kixo.reset()
 
 The standard properties Kixo recognises today (case must match):
 
-`email`, `phone`, `name`, `first_name`, `last_name`, `avatar_url`,
-`created`, `city`, `country`, `region`, `language`, `timezone`,
-`gender`, `birth_year`, `plan`, `revenue`.
+`$email`, `$phone`, `$name`, `$first_name`, `$last_name`, `$avatar_url`,
+`$created`, `$city`, `$country`, `$region`, `$language`, `$timezone`,
+`$gender`, `$birth_year`, `$plan`, `$revenue`.
 
 Any other key you set on `setUserProperty` is stored as a custom trait
 and is queryable from segments and the AI chat. Boolean values are the

@@ -12556,21 +12556,21 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 23948,
+      "offset": 24120,
       "length": 12,
       "value": "\"foreground\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 29288,
+      "offset": 29460,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 30660,
+      "offset": 30832,
       "length": 6,
       "value": "\"info\""
     },
@@ -14047,126 +14047,126 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 911,
+      "offset": 994,
+      "length": 8,
+      "value": "\"$email\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 1025,
+      "length": 8,
+      "value": "\"$phone\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 1056,
       "length": 7,
-      "value": "\"email\""
+      "value": "\"$name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 941,
-      "length": 7,
-      "value": "\"phone\""
+      "offset": 1086,
+      "length": 13,
+      "value": "\"$first_name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 971,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1000,
+      "offset": 1122,
       "length": 12,
-      "value": "\"first_name\""
+      "value": "\"$last_name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1035,
+      "offset": 1157,
+      "length": 13,
+      "value": "\"$avatar_url\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 1193,
+      "length": 10,
+      "value": "\"$created\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
+      "length": 7,
+      "value": "\"$city\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 1286,
+      "length": 10,
+      "value": "\"$country\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 9,
+      "value": "\"$region\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 1351,
       "length": 11,
-      "value": "\"last_name\""
+      "value": "\"$language\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1069,
-      "length": 12,
-      "value": "\"avatar_url\""
+      "offset": 1385,
+      "length": 11,
+      "value": "\"$timezone\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1419,
       "length": 9,
-      "value": "\"created\""
+      "value": "\"$gender\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
-      "length": 6,
-      "value": "\"city\""
+      "offset": 1451,
+      "length": 13,
+      "value": "\"$birth_year\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1196,
-      "length": 9,
-      "value": "\"country\""
+      "offset": 1487,
+      "length": 7,
+      "value": "\"$plan\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1228,
-      "length": 8,
-      "value": "\"region\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1259,
+      "offset": 1546,
       "length": 10,
-      "value": "\"language\""
+      "value": "\"$revenue\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1292,
-      "length": 10,
-      "value": "\"timezone\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1325,
-      "length": 8,
-      "value": "\"gender\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1356,
-      "length": 12,
-      "value": "\"birth_year\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1391,
-      "length": 6,
-      "value": "\"plan\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1450,
-      "length": 9,
-      "value": "\"revenue\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
-      "kind": "StringLiteral",
-      "offset": 1605,
+      "offset": 1701,
       "length": 6,
       "value": "\"apns\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Identity\/UserProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1632,
+      "offset": 1728,
       "length": 10,
       "value": "\"firebase\""
     },

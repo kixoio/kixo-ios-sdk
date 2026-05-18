@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.5] — 2026-05-18
+
+Restore the 569Xlprefix convention on `StandardProperty` rawValues
+(reverts v1.0.4). Reserved namespace separation is the whole point
+of the Mixpanel convention; without it a customer using bare
+`email` for their own app's notification-frequency property
+collides with the Kixo `$email` reserved column.
+
+**Built from** `kixo-ios-sdk@760bde2` with Xcode 26.4 / Swift 6.3.1.
+**XCFramework sha256:** `27102b023e35e86c44dcca761848bf88aecfc9c5e167d88f8709cea80fdcb997`.
+
+### Changed (canonical wire shape — back to v1.0.3 form)
+
+- `StandardProperty.email.rawValue` = `"$email"` (was `"email"` in v1.0.4)
+- Same for all 15 other cases — $-prefix restored throughout
+- Backend pivot reads ONE canonical form (`$email`); no fallback
+
+### Drop-in upgrade
+
+`.package(url: ..., from: "1.0.0")` auto-resolves to `1.0.5` on
+next `swift package update`. Customer code using the typed enum
+form (`Kixo.setUserProperty(.email, value: "…")`) continues to
+work unchanged — only the underlying wire string changed back to
+$-prefix.
+
 ## [1.0.4] — 2026-05-18
 
 Drop the legacy \$-prefix from all 16 reserved StandardProperty keys.
