@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.4] — 2026-05-18
+
+Drop the legacy \$-prefix from all 16 reserved StandardProperty keys.
+
+**Built from** `kixo-ios-sdk@e93a9ec` with Xcode 26.4 / Swift 6.3.1.
+**XCFramework sha256:**
+`a296df23a450e1c7145cfb84a4655f7bb195a55aad07134daa60cbfce2759974`.
+
+### Changed (canonical wire shape)
+
+- **`StandardProperty.email.rawValue` now `"email"` (was `"\$email"`).** Same
+  for the other 15 cases — `phone`, `name`, `first_name`,
+  `last_name`, `avatar_url`, `created`, `city`, `country`,
+  `region`, `language`, `timezone`, `gender`, `birth_year`,
+  `plan`, `revenue`. The Mixpanel-style \$-prefix convention was
+  dropped pre-production: the 3 SDKs disagreed on it, Web/Android
+  READMEs always shipped bare keys, the backend pivot was indexing
+  both forms, and customers who followed the docs saw correct data
+  on the detail page but `email: null` on the audience list. One
+  canonical name per property.
+
+### Drop-in upgrade
+
+`.package(url: ..., from: "1.0.0")` auto-resolves to `1.0.4` on
+the next `swift package update`. No code changes required on the
+customer side; the `StandardProperty` typed enum still works the
+same way at the call site, only its underlying wire key changed.
+
 ## [1.0.3] — 2026-05-17
 
 `Kixo.group()` shape cleanup — mirrors Android v0.1.6.

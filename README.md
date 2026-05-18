@@ -97,8 +97,8 @@ Kixo.setUserProperty(.plan, value: "pro")
 
 // Or in bulk
 Kixo.setUserProperties([
-    "$email": "user@example.com",
-    "$plan":  "pro",
+    "email": "user@example.com",
+    "plan":  "pro",
     "lifetimeOrders": 12
 ])
 
@@ -113,9 +113,9 @@ Kixo.reset()
 
 The standard properties Kixo recognises today (case must match):
 
-`$email`, `$phone`, `$name`, `$first_name`, `$last_name`, `$avatar_url`,
-`$created`, `$city`, `$country`, `$region`, `$language`, `$timezone`,
-`$gender`, `$birth_year`, `$plan`, `$revenue`.
+`email`, `phone`, `name`, `first_name`, `last_name`, `avatar_url`,
+`created`, `city`, `country`, `region`, `language`, `timezone`,
+`gender`, `birth_year`, `plan`, `revenue`.
 
 Any other key you set on `setUserProperty` is stored as a custom trait
 and is queryable from segments and the AI chat. Boolean values are the
