@@ -280,9 +280,9 @@ The full surface of `ConfigurationOptions`:
 | `flushInterval` | `30` | Seconds between event-batch flushes |
 | `flushAt` | `20` | Flush immediately when the queue exceeds this |
 | `maxBufferSize` | `200` | Hard cap on the event queue while offline |
-| `apiHost` | auto | Resolved per environment: `sdk.dev.kixo.io` (development), `sdk.staging.kixo.io` (staging), `sdk.kixo.io` (production). Override only for self-hosted backends. |
+| `apiHost` | `https://sdk.kixo.io` | Production ingest host by default. Resolved from `environment`: production → `sdk.kixo.io`. Pass an explicit `environment` (or this `apiHost`) only when you need a non-production or self-hosted backend. |
 | `debug` | auto | Print verbose `[Kixo]` log lines. Defaults to `true` in Xcode Debug builds, `false` in TestFlight / App Store. |
-| `environment` | auto | Auto-detected: `development` (Sim / Debug), `staging` (TestFlight sandbox), `production` (App Store). Pass any string to override. |
+| `environment` | `"production"` | Always `production` unless you pass an explicit value. The SDK does **not** auto-promote Simulator / Debug / TestFlight builds to a non-prod environment (removed in v1.0.1 — it leaked your Debug/Simulator events to Kixo's internal backend). Pass `"development"` / `"staging"` / a custom stage name to override. |
 | `replayEnabled` | `false` | Enable session replay |
 | `replaySampleRate` | `0.05` | Fraction of sessions captured (0.0–1.0). 5% default keeps storage / bandwidth modest; bump for low-traffic apps. |
 | `replayCaptureOnCellular` | `false` | If `false`, replay frames stay on disk on cellular and upload on Wi-Fi |
