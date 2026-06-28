@@ -29,15 +29,15 @@ notification, and (optionally) a privacy-aware visual replay of each session.
 ```swift
 dependencies: [
     .package(
-        url: "https://<git-host>/kuicktech/kixo-ios-sdk-release.git",
-        from: "1.0.6"
+        url: "https://github.com/kixoio/kixo-ios-sdk.git",
+        from: "1.0.7"
     ),
 ],
 targets: [
     .target(
         name: "YourApp",
         dependencies: [
-            .product(name: "KixoSDK", package: "kixo-ios-sdk-release"),
+            .product(name: "KixoSDK", package: "kixo-ios-sdk"),
         ]
     )
 ]

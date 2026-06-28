@@ -9,7 +9,7 @@ import PackageDescription
 // paste this repository URL, OR by referencing it in their own
 // Package.swift:
 //
-//     .package(url: "https://<git-host>/kuicktech/kixo-ios-sdk-release.git",
+//     .package(url: "https://github.com/kixoio/kixo-ios-sdk.git",
 //              from: "1.0.0")
 //
 // Then `import KixoSDK` and call `Kixo.configure(...)`. Full setup
