@@ -17,6 +17,7 @@ import ObjectiveC
 import QuartzCore
 import SQLite3
 import Security
+import StoreKit
 import Swift
 import SwiftUI
 import UIKit
@@ -29,6 +30,9 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 import ObjectiveC.runtime
+extension KixoSDK.Kixo {
+  public static func setAdvertisingConsent(_ idfa: Swift.String?)
+}
 public struct Breadcrumb : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -53,7 +57,11 @@ public struct ConfigurationOptions {
   public var replayEnabled: Swift.Bool
   public var replaySampleRate: Swift.Double
   public var replayCaptureOnCellular: Swift.Bool
-  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackNetwork: Swift.Bool = false, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false)
+  public var deepLinkAutoOpen: Swift.Bool
+  public var universalLinkHosts: [Swift.String]
+  public var deferredClipboardMatchEnabled: Swift.Bool
+  public var installReceiptValidationEnabled: Swift.Bool
+  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackNetwork: Swift.Bool = false, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false, deepLinkAutoOpen: Swift.Bool = false, universalLinkHosts: [Swift.String] = ["kixo.cc"], deferredClipboardMatchEnabled: Swift.Bool = false, installReceiptValidationEnabled: Swift.Bool = true)
 }
 public struct KixoDiagnostics : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public let initialised: Swift.Bool
@@ -61,6 +69,11 @@ public struct KixoDiagnostics : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public let environment: Swift.String
   public let apiHost: Swift.String
   public let queue: KixoSDK.KixoDiagnostics.QueueHealth
+  public let internalDevForced: Swift.Bool
+  public let deepLinkAutoOpen: Swift.Bool
+  public let clipboardMatchEnabled: Swift.Bool
+  public let lastDeepLinkSource: Swift.String?
+  public let installValidationStatus: Swift.String
   public struct QueueHealth : Swift.Codable, Swift.Equatable, Swift.Sendable {
     public let bufferedEventCount: Swift.Int
     public let bufferCap: Swift.Int
@@ -72,7 +85,7 @@ public struct KixoDiagnostics : Swift.Codable, Swift.Equatable, Swift.Sendable {
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
-  public init(initialised: Swift.Bool, paused: Swift.Bool, environment: Swift.String, apiHost: Swift.String, queue: KixoSDK.KixoDiagnostics.QueueHealth)
+  public init(initialised: Swift.Bool, paused: Swift.Bool, environment: Swift.String, apiHost: Swift.String, queue: KixoSDK.KixoDiagnostics.QueueHealth, internalDevForced: Swift.Bool = false, deepLinkAutoOpen: Swift.Bool = false, clipboardMatchEnabled: Swift.Bool = false, lastDeepLinkSource: Swift.String? = nil, installValidationStatus: Swift.String = "not_run")
   public static func == (a: KixoSDK.KixoDiagnostics, b: KixoSDK.KixoDiagnostics) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -112,12 +125,131 @@ extension KixoSDK.Kixo {
   public static func logPushAction(userInfo: [Swift.AnyHashable : Any], actionIdentifier: Swift.String)
   public static func logPushTokenInvalidated(token: Swift.String, provider: KixoSDK.PushProvider = .apns)
   public static func reset()
+  public static func optOut()
+  public static func optIn()
   public static func diagnostics() -> KixoSDK.KixoDiagnostics
   public static func flush()
   @discardableResult
   public static func flush(timeout: Foundation.TimeInterval) -> Swift.Bool
   public static func screenView(_ name: Swift.String, properties: [Swift.String : Any] = [:])
   public static func addBreadcrumb(category: Swift.String, message: Swift.String, data: [Swift.String : Any]? = nil, level: Swift.String = "info")
+  public static func onDeepLink(_ handler: @escaping (KixoSDK.KixoDeepLink) -> Swift.Void)
+  public static var skan: KixoSDK.KixoSKAN {
+    get
+  }
+  public static func resolveLink(_ url: Foundation.URL) async -> KixoSDK.KixoDeepLink?
+  public static func handleSceneConnection(_ connectionOptions: UIKit.UIScene.ConnectionOptions)
+  public static func handleUserActivity(_ userActivity: Foundation.NSUserActivity)
+  @discardableResult
+  public static func handleURL(_ url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+public struct KixoDeepLink {
+  public enum Source : Swift.String {
+    case universalLink
+    case customScheme
+    case push
+    case deferredClipboard
+    case deferredFingerprint
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let url: Foundation.URL
+  public let path: Swift.String
+  public let parameters: [Swift.String : Swift.String]
+  public let source: KixoSDK.KixoDeepLink.Source
+  public let isDeferred: Swift.Bool
+  public var linkId: Swift.String? {
+    get
+  }
+  public var campaign: Swift.String? {
+    get
+  }
+  public var mediaSource: Swift.String? {
+    get
+  }
+  public var targetPath: Swift.String? {
+    get
+  }
+  public var matchMethod: Swift.String? {
+    get
+  }
+  public var matchConfidence: Swift.Double? {
+    get
+  }
+  public var isDeterministic: Swift.Bool {
+    get
+  }
+}
+public enum KixoCoarseConversionValue : Swift.String {
+  case none
+  case low
+  case medium
+  case high
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 14.0, macOS 11.0, *)
+@_Concurrency.MainActor @preconcurrency public struct KixoDeepLinkModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: KixoSDK.KixoDeepLinkModifier.Content) -> some SwiftUICore.View
+  
+  @available(iOS 14.0, macOS 11.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s7KixoSDK0A16DeepLinkModifierV4body7contentQr7SwiftUI05_ViewE8_ContentVyACG_tF", 0) __
+}
+@available(iOS 14.0, macOS 11.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func onKixoDeepLink(_ handler: @escaping (KixoSDK.KixoDeepLink) -> Swift.Void) -> some SwiftUICore.View
+  
+}
+@_hasMissingDesignatedInitializers final public class KixoSKAN {
+  public struct SkanStatus : Swift.Equatable, Swift.Sendable {
+    public let enabled: Swift.Bool
+    public let cvSchemaConfigured: Swift.Bool
+    public let currentFine: Swift.Int
+    public let windowOpen: Swift.Bool
+    public let lastConversionValueSet: Swift.Int?
+    public let lastUpdateError: Swift.String?
+    public let lockedAt: Foundation.Date?
+    public let expectedReportEndpoint: Swift.String?
+    public let internalDevForced: Swift.Bool
+    public static func == (a: KixoSDK.KixoSKAN.SkanStatus, b: KixoSDK.KixoSKAN.SkanStatus) -> Swift.Bool
+  }
+  public enum CoarseValue : Swift.String, Swift.Sendable {
+    case low, medium, high
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct CvSchema : Swift.Equatable, Swift.Sendable {
+    public enum Model : Swift.String, Swift.Sendable {
+      case revenueBuckets, raw
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public let model: KixoSDK.KixoSKAN.CvSchema.Model
+    public let buckets: [Swift.Double]
+    public let funnelBits: [Swift.String]
+    public let lockWindowOnPurchase: Swift.Bool
+    public static let `default`: KixoSDK.KixoSKAN.CvSchema
+    public init(model: KixoSDK.KixoSKAN.CvSchema.Model, buckets: [Swift.Double], funnelBits: [Swift.String], lockWindowOnPurchase: Swift.Bool)
+    public static func == (a: KixoSDK.KixoSKAN.CvSchema, b: KixoSDK.KixoSKAN.CvSchema) -> Swift.Bool
+  }
+  final public func status() -> KixoSDK.KixoSKAN.SkanStatus
+  @discardableResult
+  final public func updateConversionValue(fine: Swift.Int, coarse: KixoSDK.KixoSKAN.CoarseValue? = nil, lockWindow: Swift.Bool = false) -> Swift.Bool
+  @discardableResult
+  final public func recordConversionEvent(_ name: Swift.String, revenue: Foundation.Decimal? = nil) -> Swift.Bool
   @objc deinit
 }
 extension UIKit.UIView {
@@ -315,6 +447,20 @@ public enum PushProvider : Swift.String {
     get
   }
 }
+extension KixoSDK.KixoDeepLink.Source : Swift.Equatable {}
+extension KixoSDK.KixoDeepLink.Source : Swift.Hashable {}
+extension KixoSDK.KixoDeepLink.Source : Swift.RawRepresentable {}
+extension KixoSDK.KixoCoarseConversionValue : Swift.Equatable {}
+extension KixoSDK.KixoCoarseConversionValue : Swift.Hashable {}
+extension KixoSDK.KixoCoarseConversionValue : Swift.RawRepresentable {}
+@available(iOS 14.0, macOS 11.0, *)
+extension KixoSDK.KixoDeepLinkModifier : Swift.Sendable {}
+extension KixoSDK.KixoSKAN.CoarseValue : Swift.Equatable {}
+extension KixoSDK.KixoSKAN.CoarseValue : Swift.Hashable {}
+extension KixoSDK.KixoSKAN.CoarseValue : Swift.RawRepresentable {}
+extension KixoSDK.KixoSKAN.CvSchema.Model : Swift.Equatable {}
+extension KixoSDK.KixoSKAN.CvSchema.Model : Swift.Hashable {}
+extension KixoSDK.KixoSKAN.CvSchema.Model : Swift.RawRepresentable {}
 extension KixoSDK.SemanticRole : Swift.RawRepresentable {}
 extension KixoSDK.ScreenState : Swift.Equatable {}
 extension KixoSDK.ScreenState : Swift.Hashable {}

@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.7] — 2026-06-28
+
+App-approval gate support and StoreKit install validation, plus an Xcode 26 build fix.
+
+**XCFramework sha256:** `feb22e3db9fa8a4f95244c62f6c0ac04b59f55fc02e3358b84ff240a3e502986`.
+
+### Added
+
+- **App identity on config refresh + push registration** — the SDK now sends `platform` / `bundle_id` / `environment` / `sdk_version` on remote-config refresh and `app_id` / `release_id` / `bundle_id` / `environment` / `sdk_version` on push-token registration, so Kixo's server-side app-approval gate can scope and approve the app. Existing single-app integrations are unaffected (the first app per project auto-approves).
+- **StoreKit 2 install-receipt validation** (`InstallValidator`) — forwards the signed `AppTransaction` JWS to Kixo for deterministic install validation.
+
+### Fixed
+
+- **Xcode 26 / iOS 26 SDK build** — read the app-transaction JWS from `VerificationResult.jwsRepresentation` (the wrapper, available iOS 16+, covers both verified and unverified results) instead of the unwrapped `AppTransaction`, which no longer exposes `jwsRepresentation` in the iOS 26 SDK.
+- **Config self-pause on a nil bundle identifier** — a missing `Bundle.main.bundleIdentifier` no longer causes the config call to pause.
+
+---
 ## [1.0.6] — 2026-05-18
 
 Expand the `StandardProperty` reserved-namespace catalog from

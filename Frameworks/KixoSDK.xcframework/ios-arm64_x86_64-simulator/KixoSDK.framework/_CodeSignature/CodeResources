@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		Uyg/xoIeYbyFQLSdpXgJXByhlJE=
+		z7b6A+AA4ijTIJb0ys7Bpg6lqss=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZAmW/HUOcxZE3kJUDC3yHazy/w4=
+		wz8xlg1y4CIsQZPQn3lS19iV2ns=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		zndAzD2reyWKwLtBHw4EHaqOrk4=
+		rnqmnL/AuEEm8zw/01Wt0i4MbpU=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		x7ixfHQngJKjqR35GIWaTjKF9CY=
+		4+0jtWML3xnF/sSm9d0m+asoFOc=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zndAzD2reyWKwLtBHw4EHaqOrk4=
+		rnqmnL/AuEEm8zw/01Wt0i4MbpU=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3xbwGZG2f2RZi+huEPzs6dt7ZWQ=
+		yOdpsY7VtZJ1RtoSCUuexMf/XnY=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZAmW/HUOcxZE3kJUDC3yHazy/w4=
+		wz8xlg1y4CIsQZPQn3lS19iV2ns=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9jV1FB0e/mQoA9TfHKXZp9D9wUE=
+		0XXW46LhB+vX/rG0Tz52pH+lCL0=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CK5biKKjMPDdDcK+Z7Hy/j1LCSE=
+		cyDM01Ixvsl/6ovculDnOd38Lx8=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9jV1FB0e/mQoA9TfHKXZp9D9wUE=
+		0XXW46LhB+vX/rG0Tz52pH+lCL0=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VNo8twOksUUFi/ceEJkNGjacV5E=
+		5ekFKfnsWL9rcjEunsJlodoSR2g=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -59,70 +59,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wN9E6fb7OCiqiNkpQC4L2sq5nppD42LvrAup29old1g=
+			VS6yGlPbpOSnPug8mZ7laCYAb9m0FnLh9xuwrZMcDNc=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROmiZUw4iLCYxKZzr5vgIlQqdpyH/wT0Z6pVNfy4wx8=
+			2gvZxGLD9DTL2dEo+4XDgmgG28QcyrcqQEgPSMoYHLc=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z/Cz3MECWSUh34BHY09sBitx1Co4nObqyx0dxJXOcws=
+			3KH+uXqYf92+1ljlDAZp/CW9++I4jFRTkVNArjHReMU=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROmiZUw4iLCYxKZzr5vgIlQqdpyH/wT0Z6pVNfy4wx8=
+			2gvZxGLD9DTL2dEo+4XDgmgG28QcyrcqQEgPSMoYHLc=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCbwaB2OTScKJ4TXyGe1Dz+dwCS4akS84bRHsxRjOPE=
+			ShkTrm3kBC6JXhHjEATtTdSfyZ5+t8tLelMp29/cmSQ=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wN9E6fb7OCiqiNkpQC4L2sq5nppD42LvrAup29old1g=
+			VS6yGlPbpOSnPug8mZ7laCYAb9m0FnLh9xuwrZMcDNc=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkFcuHcx7XI83BTDaUj+vZIuMc3hpjdLlu0Gdcn+qB4=
+			xr5fdHeKZtf1W/dPWfy7cwBhsZ28Uu4+Rys333M9+QU=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8LqpWKEvyvxer73YN/RqJwgpHaLOYmdkf7fTwSLA8TY=
+			EuU4cxkptpXAoxcfjNlYJvQheNrerxPWNepk+YtD3No=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkFcuHcx7XI83BTDaUj+vZIuMc3hpjdLlu0Gdcn+qB4=
+			xr5fdHeKZtf1W/dPWfy7cwBhsZ28Uu4+Rys333M9+QU=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2A6qaNVP9P7MphPCMpQ0Uev4/rfVjvsA4RVDrDsWB+c=
+			Tw5m4bEvcZY0dYkETzIoOpQFqYyOZ0QZik/KPcz0fUU=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
