@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.9] — 2026-07-04
+
+Session-replay capture performance overhaul — removes the main-thread jank on interaction-heavy and video screens. No public API changes.
+
+**XCFramework sha256:** `84b980f520e134d8504322b10dc737b23cc28131c551d771283e6868a4e68b1d`.
+
+### Changed
+
+- **Replay capture is now dirty-region aware and throttled.** Instead of a full-screen render on every interaction, the SDK skips capture when the screen hasn't changed (view-tree signature incl. scroll offset + text), coalesces bursts behind a cadence floor, and captures at scroll-settle rather than mid-scroll. On screens with video + long text during slow scrolls this eliminates the visible stutter.
+- **Video / WebView / Metal / camera regions are placeholdered, not screenshotted.** Those layers rasterize to a black frame through every iOS capture API anyway, so the SDK no longer pays the render cost for them.
+- **Render primitive rewritten to raw CoreGraphics** (kept `drawHierarchy`), materially cutting the per-frame main-thread block.
+- **Over-quota / metadata-only sessions no longer pay any capture cost** — the quota gate now short-circuits before the render.
+
+### Added
+
+- **Server-tunable replay performance knobs** — the backend can disable/adjust the structural pipeline, per-leaf tiles, OCR, and capture cadence per project (kill-switch), applied at session start.
+- **Honest upload telemetry** — the SDK reports confirmed uploads and per-reason drop counts (`frames_dropped` / `drop_reasons`) at session end, distinguishing real failures from deliberate perf skips.
+- **Pre-upload size guard** — frames are checked against the backend-signed size cap with a quality re-encode ladder before upload; oversize artifacts are dropped cleanly instead of 4xx-ing to a `failed/` directory.
+- **`os_signpost` instrumentation** (`io.kixo.replay`) around every capture stage for on-device profiling.
+
+### Fixed
+
+- **Privacy: OCR now fails closed on redaction failure** — if a frame's redaction can't be applied, the SDK skips text recognition for that frame instead of ever reading unredacted pixels.
+- **Server-side replay truncation is honored** — when a session hits its per-plan frame/duration cap the SDK stops capturing frames (metadata-only) instead of churning on uploads that can't land.
+
+---
 ## [1.0.8] — 2026-07-04
 
 Fixes session-replay frame uploads, which were silently failing for every frame.

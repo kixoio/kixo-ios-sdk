@@ -290,7 +290,9 @@ public enum ScreenState : Swift.String, Swift.Codable {
 }
 public struct StructuralSnapshot : Swift.Codable {
   public let viewport: KixoSDK.StructuralSnapshot.Rect
-  public let nodes: [KixoSDK.StructuralSnapshot.Node]
+  public var nodes: [KixoSDK.StructuralSnapshot.Node] {
+    get
+  }
   public let safeAreaInsets: KixoSDK.StructuralSnapshot.Insets?
   public let buildHash: Swift.String
   public let capturedAt: Foundation.TimeInterval
@@ -333,6 +335,7 @@ public struct StructuralSnapshot : Swift.Codable {
     public let value: Swift.String?
     public let swiftType: Swift.String?
     public let source: Swift.String?
+    public var placeholder: Swift.String?
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
