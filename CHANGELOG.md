@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.8] — 2026-07-04
+
+Fixes session-replay frame uploads, which were silently failing for every frame.
+
+**XCFramework sha256:** `ac095366da5285abd82773b6524cba367a6b3232ab6b18a22b46879748db143b`.
+
+### Fixed
+
+- **Session-replay frame uploads (100% failure → fixed)** — the signed GCS PUT sent `x-goog-content-length-range: 0,250000`, but the backend signs the upload URL with the canonical universal 20 KB frame cap (`0,20000`). Because that is a *signed* extension header, the byte mismatch produced `403 SignatureDoesNotMatch`, so every captured replay frame was moved to the local `failed/` directory and never reached storage. Aligned the SDK's content-length-range to the backend's 20 KB cap; frames now upload. Analytics, tap capture, and the replay session lifecycle were unaffected — only the pixel-frame upload was broken. (Verified end-to-end on a simulator with real touch injection.)
+
+---
 ## [1.0.7] — 2026-06-28
 
 App-approval gate support and StoreKit install validation, plus an Xcode 26 build fix.
