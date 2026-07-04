@@ -252,6 +252,17 @@ extension SwiftUICore.View {
   final public func recordConversionEvent(_ name: Swift.String, revenue: Foundation.Decimal? = nil) -> Swift.Bool
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers final public class KixoNetworkDelegateProxy : ObjectiveC.NSObject, Foundation.URLSessionTaskDelegate, Foundation.URLSessionDataDelegate {
+  convenience public init(wrapping target: (any Foundation.URLSessionDelegate)?)
+  @objc override final public func responds(to aSelector: ObjectiveC.Selector!) -> Swift.Bool
+  @objc override final public func forwardingTarget(for aSelector: ObjectiveC.Selector!) -> Any?
+  @objc final public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didFinishCollecting metrics: Foundation.URLSessionTaskMetrics)
+  @objc final public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: (any Swift.Error)?)
+  @objc deinit
+}
+extension KixoSDK.Kixo {
+  public static func networkDelegate(wrapping target: (any Foundation.URLSessionDelegate)? = nil) -> KixoSDK.KixoNetworkDelegateProxy
+}
 extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public var kxRedact: Swift.Bool {
     get

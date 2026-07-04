@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.10] — 2026-07-05
+
+Network-capture redesign + dirty-driven replay cadence — removes the remaining scroll jank on media-heavy feeds. No public API changes.
+
+**XCFramework sha256:** `0f7aa152a250826fceeedc9e93f1783472142da0214dff56a6502eba353cdc25`.
+
+### Changed
+
+- **Network auto-tracking rebuilt around low-cost aggregates.** `autoTrackNetwork` (still default-OFF) now records host + sanitized-route + status/latency buckets and emits a single periodic `network_summary` instead of wrapping every request. The previous global `URLSession` swizzle added per-request work to every image/video load — the dominant cost on scroll-heavy media feeds — and is gone from the default path. Detailed per-request capture is now an opt-in, sampled, remote-gated diagnostic.
+- **Replay capture is now dirty-driven (event-based, not timer-based).** Frames are taken only when the UI actually changes — a new screen (~500 ms after entry), a settled interaction, or a periodic heartbeat — behind a cadence floor. Static screens cost nothing; scroll-heavy screens no longer stutter.
+- **First-frame guarantee** — a screen frame always exists before the first interaction (cold-start frame + a frame on every screen entry), so replays never open on a blank or late frame.
+
+### Added
+
+- **Opt-in delegate-based network capture** (`Kixo.networkDelegate(wrapping:)`) for apps that want per-request detail without the global swizzle.
+- **Server-tunable cadence knobs** — post-tap settle, dirty-heartbeat interval, and scroll-end capture are adjustable per project from the backend.
+
+### Fixed
+
+- **Accurate replay frame timestamps** — frames are stamped with their real capture time, so the dashboard player anchors a tap to the pre-tap screen and shows the resulting screen after the interaction.
+
+---
 ## [1.0.9] — 2026-07-04
 
 Session-replay capture performance overhaul — removes the main-thread jank on interaction-heavy and video screens. No public API changes.
