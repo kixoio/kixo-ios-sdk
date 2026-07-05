@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.11] — 2026-07-05
+
+Replay performance, round 2 — the heavy capture pipelines are now off by default, foreground uploads skip disk, and frames are smaller. No public API changes.
+
+**XCFramework sha256:** `92bfaab2a5c1133506543539a6feb7f4aa08c7d7f095dd233286454f294ee644`.
+
+### Changed
+
+- **Structural / per-leaf-tile / OCR passes are now compiled-default OFF.** These are the expensive per-capture stages (a structural view-tree walk measured ~33 ms on a busy screen); they stay off unless the backend enables them per project. Plans that want them (e.g. Enterprise) re-enable via remote config.
+- **Memory-first frame upload.** In the foreground, frames PUT straight from memory — no disk write — through an ephemeral session; the disk-spill + background-`URLSession` path is kept only for backgrounding and transient upload failures, so no-data-loss resilience is unchanged. One shared request-builder keeps the signed headers consistent across both paths.
+- **Tighter frame compression** — HEIC quality 0.20 → 0.15 plus a 0.85× downscale (~40–50 % fewer bytes per frame, iPad capped at 0.5×). Both are remote-tunable (`replay.heicQuality` / `replay.captureScale`).
+
+Existing integrations pick these up automatically.
+
+---
 ## [1.0.10] — 2026-07-05
 
 Network-capture redesign + dirty-driven replay cadence — removes the remaining scroll jank on media-heavy feeds. No public API changes.
