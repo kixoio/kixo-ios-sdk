@@ -1821,6 +1821,339 @@
           },
           {
             "kind": "Var",
+            "name": "replayStructuralEnabled",
+            "printedName": "replayStructuralEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvp",
+            "mangledName": "$s7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvp",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvg",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvg",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvs",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvs",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvM",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV23replayStructuralEnabledSbSgvM",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "replayTileCaptureEnabled",
+            "printedName": "replayTileCaptureEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvp",
+            "mangledName": "$s7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvp",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvg",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvg",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvs",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvs",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvM",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV24replayTileCaptureEnabledSbSgvM",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "replayOcrEnabled",
+            "printedName": "replayOcrEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvp",
+            "mangledName": "$s7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvp",
+            "moduleName": "KixoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvg",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvg",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvs",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvs",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvM",
+                "mangledName": "$s7KixoSDK20ConfigurationOptionsV16replayOcrEnabledSbSgvM",
+                "moduleName": "KixoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "replaySampleRate",
             "printedName": "replaySampleRate",
             "children": [
@@ -2362,7 +2695,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(autoTrackScreens:autoTrackTaps:autoTrackFlows:autoTrackNetwork:autoTrackCrashes:autoTrackSessions:autoTrackPush:pushAttributionWindowSeconds:sessionTimeout:flushInterval:flushAt:maxBufferSize:apiHost:debug:environment:projectId:apiKeyOverride:replayEnabled:replaySampleRate:replayCaptureOnCellular:deepLinkAutoOpen:universalLinkHosts:deferredClipboardMatchEnabled:installReceiptValidationEnabled:)",
+            "printedName": "init(autoTrackScreens:autoTrackTaps:autoTrackFlows:autoTrackNetwork:autoTrackCrashes:autoTrackSessions:autoTrackPush:pushAttributionWindowSeconds:sessionTimeout:flushInterval:flushAt:maxBufferSize:apiHost:debug:environment:projectId:apiKeyOverride:replayEnabled:replayStructuralEnabled:replayTileCaptureEnabled:replayOcrEnabled:replaySampleRate:replayCaptureOnCellular:deepLinkAutoOpen:universalLinkHosts:deferredClipboardMatchEnabled:installReceiptValidationEnabled:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2538,6 +2871,51 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Double",
                 "printedName": "Swift.Double",
                 "hasDefaultArg": true,
@@ -2588,8 +2966,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7KixoSDK20ConfigurationOptionsV16autoTrackScreens0eF4Taps0eF5Flows0eF7Network0eF7Crashes0eF8Sessions0eF4Push28pushAttributionWindowSeconds14sessionTimeout13flushInterval0T2At13maxBufferSize7apiHost5debug11environment9projectId0Z11KeyOverride13replayEnabled16replaySampleRate23replayCaptureOnCellular16deepLinkAutoOpen18universalLinkHosts29deferredClipboardMatchEnabled31installReceiptValidationEnabledACSb_S6bS3dS2iSSSgSbSgA0_A0_A0_SbSdS2bSaySSGS2btcfc",
-            "mangledName": "$s7KixoSDK20ConfigurationOptionsV16autoTrackScreens0eF4Taps0eF5Flows0eF7Network0eF7Crashes0eF8Sessions0eF4Push28pushAttributionWindowSeconds14sessionTimeout13flushInterval0T2At13maxBufferSize7apiHost5debug11environment9projectId0Z11KeyOverride13replayEnabled16replaySampleRate23replayCaptureOnCellular16deepLinkAutoOpen18universalLinkHosts29deferredClipboardMatchEnabled31installReceiptValidationEnabledACSb_S6bS3dS2iSSSgSbSgA0_A0_A0_SbSdS2bSaySSGS2btcfc",
+            "usr": "s:7KixoSDK20ConfigurationOptionsV16autoTrackScreens0eF4Taps0eF5Flows0eF7Network0eF7Crashes0eF8Sessions0eF4Push28pushAttributionWindowSeconds14sessionTimeout13flushInterval0T2At13maxBufferSize7apiHost5debug11environment9projectId0Z11KeyOverride13replayEnabled23replayStructuralEnabled24replayTileCaptureEnabled16replayOcrEnabled16replaySampleRate23replayCaptureOnCellular16deepLinkAutoOpen18universalLinkHosts29deferredClipboardMatchEnabled31installReceiptValidationEnabledACSb_S6bS3dS2iSSSgSbSgA3_A3_A3_SbA4_A4_A4_SdS2bSaySSGS2btcfc",
+            "mangledName": "$s7KixoSDK20ConfigurationOptionsV16autoTrackScreens0eF4Taps0eF5Flows0eF7Network0eF7Crashes0eF8Sessions0eF4Push28pushAttributionWindowSeconds14sessionTimeout13flushInterval0T2At13maxBufferSize7apiHost5debug11environment9projectId0Z11KeyOverride13replayEnabled23replayStructuralEnabled24replayTileCaptureEnabled16replayOcrEnabled16replaySampleRate23replayCaptureOnCellular16deepLinkAutoOpen18universalLinkHosts29deferredClipboardMatchEnabled31installReceiptValidationEnabledACSb_S6bS3dS2iSSSgSbSgA3_A3_A3_SbA4_A4_A4_SdS2bSaySSGS2btcfc",
             "moduleName": "KixoSDK",
             "declAttributes": [
               "AccessControl"
@@ -17922,140 +18300,140 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9097,
+      "offset": 9856,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9133,
+      "offset": 9892,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9170,
+      "offset": 9929,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9869,
+      "offset": 10628,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9909,
+      "offset": 10668,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9949,
+      "offset": 10708,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 9985,
+      "offset": 10744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10044,
+      "offset": 10803,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10049,
+      "offset": 10808,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10092,
+      "offset": 10851,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10134,
+      "offset": 10893,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10161,
+      "offset": 10920,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 10194,
+      "offset": 10953,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11452,
+      "offset": 12211,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 11494,
+      "offset": 12385,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11540,
+      "offset": 12431,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11645,
+      "offset": 12536,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "Array",
-      "offset": 11691,
+      "offset": 12582,
       "length": 11,
       "value": "[\"kixo.cc\"]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11750,
+      "offset": 12641,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11805,
+      "offset": 12696,
       "length": 4,
       "value": "true"
     },
@@ -19315,7 +19693,7 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 115959,
+      "offset": 116726,
       "length": 5,
       "value": "false"
     },

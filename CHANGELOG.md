@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.13] — 2026-07-05
+
+Adds client-side overrides for the heavy replay sub-pipelines. No behavior change unless you set them.
+
+**XCFramework sha256:** `1d920ec72c85ac6ed822a427e81e5a9874f12a06c092f54f44a187a0a8609436`.
+
+### Added
+
+- **`ConfigurationOptions.replayStructuralEnabled` / `replayTileCaptureEnabled` / `replayOcrEnabled`** (`Bool?`, default `nil`). `nil` = follow the server / plan remote config (which is compiled-default OFF since the perf round 2); a non-nil value **wins over** the remote config, so a host can force each heavy replay sub-pipeline — the structural view-tree walk, per-leaf tiles, or Vision OCR — on or off to A/B its cost, independent of the backend. Client-side only; applied last at replay start.
+
+---
 ## [1.0.12] — 2026-07-05
 
 Adds `autoTrackFlows` — a client-side switch for the always-on journey/flow layer. No behavior change unless you set it.

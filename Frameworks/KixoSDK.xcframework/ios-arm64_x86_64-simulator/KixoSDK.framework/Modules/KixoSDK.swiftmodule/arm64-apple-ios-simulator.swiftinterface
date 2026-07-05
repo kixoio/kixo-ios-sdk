@@ -56,13 +56,16 @@ public struct ConfigurationOptions {
   public var projectId: Swift.String?
   public var apiKeyOverride: Swift.String?
   public var replayEnabled: Swift.Bool
+  public var replayStructuralEnabled: Swift.Bool?
+  public var replayTileCaptureEnabled: Swift.Bool?
+  public var replayOcrEnabled: Swift.Bool?
   public var replaySampleRate: Swift.Double
   public var replayCaptureOnCellular: Swift.Bool
   public var deepLinkAutoOpen: Swift.Bool
   public var universalLinkHosts: [Swift.String]
   public var deferredClipboardMatchEnabled: Swift.Bool
   public var installReceiptValidationEnabled: Swift.Bool
-  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackFlows: Swift.Bool = true, autoTrackNetwork: Swift.Bool = false, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false, deepLinkAutoOpen: Swift.Bool = false, universalLinkHosts: [Swift.String] = ["kixo.cc"], deferredClipboardMatchEnabled: Swift.Bool = false, installReceiptValidationEnabled: Swift.Bool = true)
+  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackFlows: Swift.Bool = true, autoTrackNetwork: Swift.Bool = false, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replayStructuralEnabled: Swift.Bool? = nil, replayTileCaptureEnabled: Swift.Bool? = nil, replayOcrEnabled: Swift.Bool? = nil, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false, deepLinkAutoOpen: Swift.Bool = false, universalLinkHosts: [Swift.String] = ["kixo.cc"], deferredClipboardMatchEnabled: Swift.Bool = false, installReceiptValidationEnabled: Swift.Bool = true)
 }
 public struct KixoDiagnostics : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public let initialised: Swift.Bool
