@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.12] — 2026-07-05
+
+Adds `autoTrackFlows` — a client-side switch for the always-on journey/flow layer. No behavior change unless you set it.
+
+**XCFramework sha256:** `645eec7aab7205cad0e9fc2afb743acd2780053a7857c6163a5967c82f5cc2cf`.
+
+### Added
+
+- **`ConfigurationOptions.autoTrackFlows`** (default `true`) gates the always-on `FlowRecorder` plus the scroll / tap / screen-transition observers that feed /journey Flows / Map / Funnel. Set `false` to eliminate the always-on scroll/tap observation cost on very scroll-heavy screens — the trade-off is that `ScreenVisit.tapCount` / `scrollCount` and `screen_transition` then ship as zero, so /journey engagement + funnels lose those columns for the app. Client-side only; there is no remote-config equivalent.
+
+---
 ## [1.0.11] — 2026-07-05
 
 Replay performance, round 2 — the heavy capture pipelines are now off by default, foreground uploads skip disk, and frames are smaller. No public API changes.
