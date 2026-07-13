@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.14] — 2026-07-13
+
+Platform-review hardening batch (queues, opt-out/consent, retry/ACK, replay control-plane, remote-config cadence). No public API change.
+
+**XCFramework sha256:** `10113d0905df5885ad080af0ab1752c3ab4a5636af13b1383532a83be714ccd3`.
+
+### Changed
+
+- **Remote-config refresh cadence 5 min → 30 min (± jitter)** and fully consent-gated — `optOut()` now tears down the config-refresh timer so an opted-out device makes no further `/api/sdk/config` calls.
+- **`/init` resilience** — a 2xx response with a missing/undecodable `data_collection` block falls back to the previously-applied policy (never downgrades a stricter live policy on a transient decode failure) instead of looping recovery forever.
+- **PII filter** — restored the 256-char scan bound on the replay redaction paths (perf: keeps the regex byte-bounded).
+
+---
+
 ## [1.0.13] — 2026-07-05
 
 Adds client-side overrides for the heavy replay sub-pipelines. No behavior change unless you set them.
