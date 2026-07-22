@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.16] — 2026-07-22
+
+PII exemption hardening (re-review). No public API change.
+
+**XCFramework sha256:** `ece70ed8fddd19071b5abb60f591793121397fda1c75d10bb1323f2613733ac7`.
+
+### Fixed
+
+- **Scalar-only identity PII exemption** — only `String` and `NSNumber` identity trait values are raw-exempt now. `URL`, `Data`, `NSSet`, and custom Foundation objects (which `AnyCodable` later stringifies onto the wire) are sanitized in that same string form, closing a path where PII embedded in a non-string identity value bypassed the scrubber.
+
+---
+
 ## [1.0.15] — 2026-07-22
 
 CRM-email PII exemption scoping fix. No public API change.

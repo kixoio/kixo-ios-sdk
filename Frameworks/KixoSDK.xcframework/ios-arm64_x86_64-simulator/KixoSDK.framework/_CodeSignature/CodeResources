@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JjjOQTrldcvRxgHtzUb7gOMBYWk=
+		5Sg+gLGWFjqXEN7Im2AYWmVKfXk=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		agH0XZI3nbv64adbMlOWg737aj0=
+		n96nX5eqA3vrzk9AezA8H+z3xd8=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JjjOQTrldcvRxgHtzUb7gOMBYWk=
+		5Sg+gLGWFjqXEN7Im2AYWmVKfXk=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XFlc+2LInFFl2P6MRhcXVBu3j/E=
+		Dk7LgjCbIHhOMZhOaxbXmG2SegU=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Q2mcqqDjwNOKmYjMuDdSXjKjCqYOCGsJBB9z3+cY08=
+			GbCbiEF1+y4EEejBExcsSsDNOkorguppe6hr7lWiL+c=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -87,14 +87,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GVLxOQq2ukYQzuahMxw2dR38ZtvU2wwM0s9v0ejOpsg=
+			5eMpYzJQOynLPQgU9NWrm+x6Tw26dvi4UtCAhsbYwU0=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Q2mcqqDjwNOKmYjMuDdSXjKjCqYOCGsJBB9z3+cY08=
+			GbCbiEF1+y4EEejBExcsSsDNOkorguppe6hr7lWiL+c=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			orMERST4T//jgriMT9LgGKy6mFcb0Sj8v/PJ3nhkLyg=
+			USTak0dLPAvLjDz4Q+ePNcOBEsiLRGuDh9Sk3R3A0Vo=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
