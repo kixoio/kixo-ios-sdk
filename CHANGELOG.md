@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.15] — 2026-07-22
+
+CRM-email PII exemption scoping fix. No public API change.
+
+**XCFramework sha256:** `6a88609e51ec53bb139fd3ff90c3735d0e370b6993c81ff95cf51cc664c2c6e3`.
+
+### Fixed
+
+- **Identity PII exemption scoped to caller traits** — the CRM email/phone/name PII-scrub exemption now applies ONLY to the traits passed to an explicit `identify()` / `setUserProperty()` call, never to super-properties or the automatic push-token event that merely share an identity key name. Generic telemetry stays scrubbed; deliberately-supplied CRM contact traits still flow. Non-scalar values under an identity key are sanitized.
+
+---
+
 ## [1.0.14] — 2026-07-13
 
 Platform-review hardening batch (queues, opt-out/consent, retry/ACK, replay control-plane, remote-config cadence). No public API change.
