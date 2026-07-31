@@ -30,7 +30,7 @@ notification, and (optionally) a privacy-aware visual replay of each session.
 dependencies: [
     .package(
         url: "https://github.com/kixoio/kixo-ios-sdk.git",
-        from: "1.0.9"
+        from: "1.0.17"
     ),
 ],
 targets: [

@@ -36,11 +36,11 @@ import PackageDescription
 let package = Package(
     name: "KixoSDK",
     platforms: [
-        // Kixo currently targets iOS 26+. Customers on earlier
-        // iOS versions are out of scope. Bump this minimum
-        // alongside any SDK release that uses APIs introduced in
-        // a newer SDK.
-        .iOS("26.0"),
+        // Matches the source package and the XCFramework's
+        // MinimumOSVersion. Keep this in sync with every release: a higher
+        // manifest floor prevents otherwise-compatible apps from resolving
+        // the binary package before the framework is even inspected.
+        .iOS("16.0"),
     ],
     products: [
         .library(
