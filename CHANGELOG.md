@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.18] — 2026-07-31
+
+Release-integrity fixes. No behaviour or public API change since 1.0.17.
+
+**XCFramework sha256:** `4c8efbe4f809df333736542f67e2027b1da23efb1b863873681c6cabfdd5d63c`.
+
+### Fixed
+
+- **The SPM manifest declared an iOS 26 floor while the binary supported
+  iOS 16.** Every published tag since 1.0.15 carried `.iOS("26.0")` in
+  `Package.swift`, so SPM refused the package for any customer below iOS 26
+  before it ever inspected the framework — even though every slice reports
+  `MinimumOSVersion 16.0`. The manifest now states 16.0, matching what the
+  binary actually supports.
+- **The packaged bundle version was stale.** `CFBundleShortVersionString`
+  read `1.0.14` in tags up to and including 1.0.17, because the Xcode project's
+  `MARKETING_VERSION` was never bumped alongside the runtime constant. Both
+  slices now report `1.0.18`, and `Distribution/build-xcframework.sh` fails the
+  build when the runtime version, the marketing version, or any packaged slice
+  disagree — so a tag can no longer ship mismatched metadata.
+
+---
+
 ## [1.0.17] — 2026-07-31
 
 Replay privacy, deep-link ownership, and push-attribution hardening. No public

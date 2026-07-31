@@ -23930,7 +23930,7 @@
       "kind": "StringLiteral",
       "offset": 130,
       "length": 8,
-      "value": "\"1.0.17\""
+      "value": "\"1.0.18\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Storage\/SQLiteEventStore.swift",
