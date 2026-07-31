@@ -63,9 +63,10 @@ public struct ConfigurationOptions {
   public var replayCaptureOnCellular: Swift.Bool
   public var deepLinkAutoOpen: Swift.Bool
   public var universalLinkHosts: [Swift.String]
+  public var customURLSchemes: [Swift.String]
   public var deferredClipboardMatchEnabled: Swift.Bool
   public var installReceiptValidationEnabled: Swift.Bool
-  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackFlows: Swift.Bool = true, autoTrackNetwork: Swift.Bool = false, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replayStructuralEnabled: Swift.Bool? = nil, replayTileCaptureEnabled: Swift.Bool? = nil, replayOcrEnabled: Swift.Bool? = nil, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false, deepLinkAutoOpen: Swift.Bool = false, universalLinkHosts: [Swift.String] = ["kixo.cc"], deferredClipboardMatchEnabled: Swift.Bool = false, installReceiptValidationEnabled: Swift.Bool = true)
+  public init(autoTrackScreens: Swift.Bool = true, autoTrackTaps: Swift.Bool = true, autoTrackFlows: Swift.Bool = true, autoTrackNetwork: Swift.Bool = false, autoTrackCrashes: Swift.Bool = true, autoTrackSessions: Swift.Bool = true, autoTrackPush: Swift.Bool = true, pushAttributionWindowSeconds: Foundation.TimeInterval = 30 * 60, sessionTimeout: Foundation.TimeInterval = 30, flushInterval: Foundation.TimeInterval = 30, flushAt: Swift.Int = 20, maxBufferSize: Swift.Int = 200, apiHost: Swift.String? = nil, debug: Swift.Bool? = nil, environment: Swift.String? = nil, projectId: Swift.String? = nil, apiKeyOverride: Swift.String? = nil, replayEnabled: Swift.Bool = false, replayStructuralEnabled: Swift.Bool? = nil, replayTileCaptureEnabled: Swift.Bool? = nil, replayOcrEnabled: Swift.Bool? = nil, replaySampleRate: Swift.Double = 0.05, replayCaptureOnCellular: Swift.Bool = false, deepLinkAutoOpen: Swift.Bool = false, universalLinkHosts: [Swift.String] = ["kixo.cc"], customURLSchemes: [Swift.String] = [], deferredClipboardMatchEnabled: Swift.Bool = false, installReceiptValidationEnabled: Swift.Bool = true)
 }
 public struct KixoDiagnostics : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public let initialised: Swift.Bool
@@ -153,9 +154,20 @@ extension KixoSDK.Kixo {
   public static func handleUserActivity(_ userActivity: Foundation.NSUserActivity)
   @discardableResult
   public static func handleURL(_ url: Foundation.URL) -> Swift.Bool
+  public static func markSensitiveReplayViewClass(_ viewClass: Swift.AnyClass, includingSubclasses: Swift.Bool = false)
+  public static func unmarkSensitiveReplayViewClass(_ viewClass: Swift.AnyClass)
   @objc deinit
 }
 public struct KixoDeepLink {
+  public enum Phase : Swift.String {
+    case received
+    case resolved
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   public enum Source : Swift.String {
     case universalLink
     case customScheme
@@ -173,13 +185,23 @@ public struct KixoDeepLink {
   public let parameters: [Swift.String : Swift.String]
   public let source: KixoSDK.KixoDeepLink.Source
   public let isDeferred: Swift.Bool
+  public let openId: Swift.String
+  public var phase: KixoSDK.KixoDeepLink.Phase {
+    get
+  }
   public var linkId: Swift.String? {
+    get
+  }
+  public var clickId: Swift.String? {
     get
   }
   public var campaign: Swift.String? {
     get
   }
   public var mediaSource: Swift.String? {
+    get
+  }
+  public var medium: Swift.String? {
     get
   }
   public var targetPath: Swift.String? {
@@ -189,6 +211,12 @@ public struct KixoDeepLink {
     get
   }
   public var matchConfidence: Swift.Double? {
+    get
+  }
+  public var resolutionMethod: Swift.String? {
+    get
+  }
+  public var resolutionConfidence: Swift.Double? {
     get
   }
   public var isDeterministic: Swift.Bool {
@@ -228,6 +256,8 @@ extension SwiftUICore.View {
     public let lastUpdateError: Swift.String?
     public let lockedAt: Foundation.Date?
     public let expectedReportEndpoint: Swift.String?
+    public let configuredReportEndpoint: Swift.String?
+    public let reportEndpointMatchesExpected: Swift.Bool?
     public let internalDevForced: Swift.Bool
     public static func == (a: KixoSDK.KixoSKAN.SkanStatus, b: KixoSDK.KixoSKAN.SkanStatus) -> Swift.Bool
   }
@@ -262,6 +292,11 @@ extension SwiftUICore.View {
   @discardableResult
   final public func recordConversionEvent(_ name: Swift.String, revenue: Foundation.Decimal? = nil) -> Swift.Bool
   @objc deinit
+}
+@available(iOS 16.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func kixoSensitive() -> some SwiftUICore.View
+  
 }
 @objc @_hasMissingDesignatedInitializers final public class KixoNetworkDelegateProxy : ObjectiveC.NSObject, Foundation.URLSessionTaskDelegate, Foundation.URLSessionDataDelegate {
   convenience public init(wrapping target: (any Foundation.URLSessionDelegate)?)
@@ -472,6 +507,9 @@ public enum PushProvider : Swift.String {
     get
   }
 }
+extension KixoSDK.KixoDeepLink.Phase : Swift.Equatable {}
+extension KixoSDK.KixoDeepLink.Phase : Swift.Hashable {}
+extension KixoSDK.KixoDeepLink.Phase : Swift.RawRepresentable {}
 extension KixoSDK.KixoDeepLink.Source : Swift.Equatable {}
 extension KixoSDK.KixoDeepLink.Source : Swift.Hashable {}
 extension KixoSDK.KixoDeepLink.Source : Swift.RawRepresentable {}

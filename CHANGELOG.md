@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.17] — 2026-07-31
+
+Replay privacy, deep-link ownership, and push-attribution hardening. No public
+API change.
+
+**XCFramework sha256:** `58dddc3dccb52178820b338cc947a74ae53badbe8f3685fb11b81844ffa3cdba`.
+
+### Fixed
+
+- **Sensitive replay content is redacted end to end.** The redaction pass now
+  covers the whole path from capture to upload, and it fails closed on deep view
+  trees instead of emitting a frame it could not fully inspect.
+- **Black bars covered the mirror image of the region they were meant to hide.**
+  The HEIC encoder wrapped the draw in a `translateBy`/`scaleBy` flip that
+  belongs to UIKit-flipped contexts, not to a `CGImage` drawn into a bare
+  bitmap, so every frame was mirrored and each mask landed opposite its target —
+  secure fields shipped visible.
+- **Frame-redaction counts are reported accurately** rather than under-counting
+  what was masked.
+- **Deep-link schemes are normalised at the gate**, and cold links persist until
+  the server policy resolves instead of being dropped mid-flight.
+- **Push attribution is gated on trusted identifiers and bound to the remote
+  policy generation**, so a late open cannot be attributed under a stale policy,
+  and manual attribution keeps its privacy boundary.
+
+---
+
 ## [1.0.16] — 2026-07-22
 
 PII exemption hardening (re-review). No public API change.
