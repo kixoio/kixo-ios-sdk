@@ -6,11 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		8r5rgBQBaonc7+ms2s76v3dDPNw=
+		qRtEAxDXWT0S40chBtSOrjqBA78=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		HJV1rYkWbyBtIOFD4YCnidBiVIM=
+		zSJyEDR3uiwgqAnc/GlMF52USKY=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZS6CqbSRlRPR/lRBIHW64DfEMeM=
+		JSlIbAak1dqZssZHHnMNUGo85aQ=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HJV1rYkWbyBtIOFD4YCnidBiVIM=
+		zSJyEDR3uiwgqAnc/GlMF52USKY=
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IHUruMjUZhREnyLHvmrwhNlthQk=
+		qyfGjGj0Gnm8IKhzdHUZhXaOfOs=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YboJyEKoacT1mS4FJSEdykGVlW+8Zu5SF7oa4rKj4p8=
+			Cb0BSqgPtaqrZ1eG9TNpzarYaq28voY+ekCJajEX2VE=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -87,14 +87,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/awMZvAUgemhce6L2PODa8WNDSZlwI23CzVRS+YpgsQ=
+			Br22bqPLWPKqhNGC0t45LepCsZHffBx3JkWD9Tfwqlw=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YboJyEKoacT1mS4FJSEdykGVlW+8Zu5SF7oa4rKj4p8=
+			Cb0BSqgPtaqrZ1eG9TNpzarYaq28voY+ekCJajEX2VE=
 			</data>
 		</dict>
 		<key>Modules/KixoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cwDZMoE2TkK4Cc+N3YQshLusQjefg8tZK3DbPKQmL5I=
+			77+a8N8YTslh/Ua4RtsCwnxlp9DN6pIctNAukv9pnx8=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

@@ -7,6 +7,51 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.19] — 2026-08-08
+
+Replay frame-loss fixes. Certified against DEV with replay verification
+enabled: all 261 claimed artifacts had bytes in storage, and the PII hard-fail
+ran over the uploaded frames.
+
+**XCFramework sha256:** `377b47d52a818368ff05f2c93e92b0fff4cc67b7a69eef33bc12b67800044125`.
+
+### Fixed
+
+- **Replay claimed frames it could never upload.** `captureOnCellular` reached
+  the wire only as `URLRequest.allowsCellularAccess` on the frame PUTs; nothing
+  consulted it on the capture side. A device off Wi-Fi in a Wi-Fi-only project
+  rendered every frame, took a signed URL, wrote the path into its metadata over
+  the unrestricted `URLSession.shared`, and the bytes never left. The recording
+  reported 568 frames, 0 stored bytes and 0 drops, and every screen image 404ed
+  in the player. Deferring cannot rescue it either — the signed URL expires 600 s
+  after it is minted.
+
+  The knob now gates capture as well, ahead of the unchanged-skip and the cadence
+  floor: those answer whether another render is worth paying for, this one
+  answers whether the bytes can reach storage at all. There is no latch — the
+  live network path is re-read on every fire, so capture resumes on the first
+  fire after Wi-Fi returns and a project-side change takes effect without an app
+  update. It fails open on an unknown path, because `NWPathMonitor` reports
+  nothing for the first tens of milliseconds after launch and answering
+  "cellular-only" there would silence replay at every cold start. A blocked
+  capture still posts a metadata-only event, so the gesture lands on the timeline
+  with no image instead of a claimed path that 404s.
+
+- **One refused replay event destroyed its whole batch.** A 409 is not
+  transient, so it marked every id in the batch as permanently failed; the queue
+  head re-formed the identical 20-row batch on every flush until all twenty were
+  deleted together. `ReplayEventQueue` now reads `rejected_event_ids` when the
+  backend supplies them, and otherwise bisects a bare 409 until the refusal is
+  isolated to the single row the server actually refused.
+
+### Added
+
+- `cellular_blocked` in `drop_reasons`, in the deliberate-skip family, so it is
+  visible without inflating `frames_dropped`. Nothing was lost — the project
+  asked us not to spend the end-user's cellular data.
+
+---
+
 ## [1.0.18] — 2026-07-31
 
 Release-integrity fixes. No behaviour or public API change since 1.0.17.
