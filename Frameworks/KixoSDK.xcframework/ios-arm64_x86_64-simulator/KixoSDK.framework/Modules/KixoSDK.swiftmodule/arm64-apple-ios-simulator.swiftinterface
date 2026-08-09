@@ -30,9 +30,6 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 import ObjectiveC.runtime
-extension KixoSDK.Kixo {
-  public static func setAdvertisingConsent(_ idfa: Swift.String?)
-}
 public struct Breadcrumb : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -137,8 +134,6 @@ extension KixoSDK.Kixo {
   public static func logPushAction(userInfo: [Swift.AnyHashable : Any], actionIdentifier: Swift.String)
   public static func logPushTokenInvalidated(token: Swift.String, provider: KixoSDK.PushProvider = .apns)
   public static func reset()
-  public static func optOut()
-  public static func optIn()
   public static func diagnostics() -> KixoSDK.KixoDiagnostics
   public static func flush()
   @discardableResult

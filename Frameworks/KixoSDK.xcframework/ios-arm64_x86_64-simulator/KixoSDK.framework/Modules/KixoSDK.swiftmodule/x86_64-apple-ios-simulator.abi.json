@@ -27,13 +27,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KixoSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -6004,52 +5997,6 @@
           },
           {
             "kind": "Function",
-            "name": "optOut",
-            "printedName": "optOut()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7KixoSDK0A0C6optOutyyFZ",
-            "mangledName": "$s7KixoSDK0A0C6optOutyyFZ",
-            "moduleName": "KixoSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "optIn",
-            "printedName": "optIn()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7KixoSDK0A0C5optInyyFZ",
-            "mangledName": "$s7KixoSDK0A0C5optInyyFZ",
-            "moduleName": "KixoSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "diagnostics",
             "printedName": "diagnostics()",
             "children": [
@@ -6534,44 +6481,6 @@
               "AccessControl",
               "RawDocComment"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setAdvertisingConsent",
-            "printedName": "setAdvertisingConsent(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7KixoSDK0A0C21setAdvertisingConsentyySSSgFZ",
-            "mangledName": "$s7KixoSDK0A0C21setAdvertisingConsentyySSSgFZ",
-            "moduleName": "KixoSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -11596,6 +11505,13 @@
         "kind": "Import",
         "name": "NaturalLanguage",
         "printedName": "NaturalLanguage",
+        "declKind": "Import",
+        "moduleName": "KixoSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KixoSDK"
       },
@@ -19250,18 +19166,11 @@
       "value": "\"accessibilityTraits\""
     },
     {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/AdvertisingConsent.swift",
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/AdvertisingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 1613,
+      "offset": 339,
       "length": 16,
       "value": "\"advertising_id\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/AdvertisingConsent.swift",
-      "kind": "StringLiteral",
-      "offset": 1744,
-      "length": 5,
-      "value": "\"lat\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/AppDelegateContinuityProxy.swift",
@@ -19588,133 +19497,154 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "StringLiteral",
-      "offset": 3650,
+      "offset": 4511,
       "length": 9,
       "value": "\"0,20000\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "StringLiteral",
-      "offset": 6466,
+      "offset": 9676,
       "length": 23,
       "value": "\"io.kixo.replay.upload\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "StringLiteral",
-      "offset": 7240,
+      "offset": 10559,
       "length": 31,
       "value": "\"io.kixo.replay.pendingUploads\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
+      "kind": "Array",
+      "offset": 12491,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "Dictionary",
-      "offset": 8135,
+      "offset": 13203,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "Array",
-      "offset": 8196,
+      "offset": 13264,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
+      "kind": "Array",
+      "offset": 13977,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8529,
+      "offset": 14619,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15455,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "BooleanLiteral",
-      "offset": 9078,
+      "offset": 16004,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "IntegerLiteral",
-      "offset": 9166,
+      "offset": 16092,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "Array",
-      "offset": 9215,
+      "offset": 16141,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "Dictionary",
-      "offset": 9776,
+      "offset": 16701,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "IntegerLiteral",
-      "offset": 9824,
+      "offset": 16749,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "Array",
-      "offset": 9889,
+      "offset": 16814,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "BooleanLiteral",
-      "offset": 12440,
+      "offset": 20948,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "BooleanLiteral",
-      "offset": 26523,
+      "offset": 39103,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "StringLiteral",
-      "offset": 31520,
+      "offset": 50579,
       "length": 36,
       "value": "\"io.kixo.replay.pendingBatchMembers\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "StringLiteral",
-      "offset": 36406,
+      "offset": 55701,
       "length": 12,
       "value": "\"image\/heic\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "IntegerLiteral",
-      "offset": 36444,
+      "offset": 55739,
       "length": 6,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "StringLiteral",
-      "offset": 40582,
+      "offset": 62521,
       "length": 12,
       "value": "\"image\/heic\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/BackgroundUploader.swift",
       "kind": "IntegerLiteral",
-      "offset": 40620,
+      "offset": 62559,
       "length": 6,
       "value": "20000"
     },
@@ -19784,147 +19714,147 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11639,
+      "offset": 11611,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11675,
+      "offset": 11647,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 11712,
+      "offset": 11684,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 12411,
+      "offset": 12387,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 12451,
+      "offset": 12427,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 12491,
+      "offset": 12467,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 12527,
+      "offset": 12503,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 12586,
+      "offset": 12562,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 12591,
+      "offset": 12567,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 12634,
+      "offset": 12610,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 12676,
+      "offset": 12652,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 12703,
+      "offset": 12679,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 12736,
+      "offset": 12712,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 13948,
+      "offset": 13924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "FloatLiteral",
-      "offset": 14122,
+      "offset": 14098,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 14168,
+      "offset": 14144,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 14273,
+      "offset": 14249,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "Array",
-      "offset": 14319,
+      "offset": 14295,
       "length": 11,
       "value": "[\"kixo.cc\"]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "Array",
-      "offset": 14369,
+      "offset": 14345,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 14419,
+      "offset": 14395,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 14474,
+      "offset": 14450,
       "length": 4,
       "value": "true"
     },
@@ -19938,14 +19868,14 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeepLinkAttributionStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 512,
+      "offset": 505,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeepLinkAttributionStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 517,
+      "offset": 510,
       "length": 2,
       "value": "60"
     },
@@ -20127,77 +20057,77 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeepLinkRouter.swift",
       "kind": "IntegerLiteral",
-      "offset": 6464,
+      "offset": 6456,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeepLinkRouter.swift",
       "kind": "IntegerLiteral",
-      "offset": 6640,
+      "offset": 6632,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeepLinkRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 7212,
+      "offset": 7204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeepLinkRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 9332,
+      "offset": 9324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeferredClipboardMatcher.swift",
       "kind": "StringLiteral",
-      "offset": 3437,
+      "offset": 3348,
       "length": 26,
       "value": "\"kixo_clipboard_read_done\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeferredClipboardMatcher.swift",
       "kind": "BooleanLiteral",
-      "offset": 3534,
+      "offset": 3445,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeferredClipboardMatcher.swift",
       "kind": "BooleanLiteral",
-      "offset": 4221,
+      "offset": 4132,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeferredClipboardMatcher.swift",
       "kind": "StringLiteral",
-      "offset": 8248,
+      "offset": 8106,
       "length": 5,
       "value": "\"kx:\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeferredClipboardMatcher.swift",
       "kind": "StringLiteral",
-      "offset": 8291,
+      "offset": 8149,
       "length": 3,
       "value": "\";\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeferredClipboardMatcher.swift",
       "kind": "StringLiteral",
-      "offset": 8322,
+      "offset": 8180,
       "length": 6,
       "value": "\"exp=\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DeferredClipboardMatcher.swift",
       "kind": "StringLiteral",
-      "offset": 8356,
+      "offset": 8214,
       "length": 6,
       "value": "\"kxt=\""
     },
@@ -20267,119 +20197,119 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 5508,
+      "offset": 5467,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 5547,
+      "offset": 5506,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 5631,
+      "offset": 5590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 5771,
+      "offset": 5730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "StringLiteral",
-      "offset": 5809,
+      "offset": 5768,
       "length": 25,
       "value": "\"awaiting_project_config\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 5869,
+      "offset": 5828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 5914,
+      "offset": 5873,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "StringLiteral",
-      "offset": 6006,
+      "offset": 5965,
       "length": 9,
       "value": "\"not_run\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 7087,
+      "offset": 7046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 7110,
+      "offset": 7069,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "StringLiteral",
-      "offset": 7138,
+      "offset": 7097,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "StringLiteral",
-      "offset": 7159,
+      "offset": 7118,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "IntegerLiteral",
-      "offset": 7223,
+      "offset": 7182,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "IntegerLiteral",
-      "offset": 7249,
+      "offset": 7208,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "IntegerLiteral",
-      "offset": 7285,
+      "offset": 7244,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "BooleanLiteral",
-      "offset": 7312,
+      "offset": 7271,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Diagnostics.swift",
       "kind": "StringLiteral",
-      "offset": 7342,
+      "offset": 7301,
       "length": 9,
       "value": "\"healthy\""
     },
@@ -20469,78 +20399,64 @@
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 19030,
-      "length": 48,
-      "value": "\"kixo_direct_link_resolve_privacy_purge_pending\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 19111,
-      "length": 35,
-      "value": "\"direct-link-resolve-purge.pending\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "Dictionary",
-      "offset": 25500,
+      "offset": 20131,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "Dictionary",
-      "offset": 25872,
+      "offset": 20503,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "Array",
-      "offset": 25916,
+      "offset": 20547,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "Array",
-      "offset": 25961,
+      "offset": 20592,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "Array",
-      "offset": 26005,
+      "offset": 20636,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 26045,
+      "offset": 20676,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 26335,
+      "offset": 20966,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 26732,
+      "offset": 21363,
       "length": 5,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/DeepLink\/DirectLinkResolveCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 33992,
+      "offset": 28623,
       "length": 5,
       "value": "1000"
     },
@@ -20575,7 +20491,7 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/DirtyTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 11718,
+      "offset": 11724,
       "length": 5,
       "value": "false"
     },
@@ -21079,28 +20995,28 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 8960,
+      "offset": 8944,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/EventQueue.swift",
       "kind": "BooleanLiteral",
-      "offset": 9749,
+      "offset": 9733,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/EventQueue.swift",
       "kind": "BooleanLiteral",
-      "offset": 10799,
+      "offset": 10783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/EventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 10993,
+      "offset": 10977,
       "length": 15,
       "value": "\"io.kixo.queue\""
     },
@@ -21149,28 +21065,14 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Flows\/FlowRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2959,
+      "offset": 2867,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Flows\/FlowRecorder.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3184,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Flows\/FlowRecorder.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3267,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Flows\/FlowRecorder.swift",
       "kind": "StringLiteral",
-      "offset": 14710,
+      "offset": 12918,
       "length": 29,
       "value": "\"io.kixo.flow.flushRequested\""
     },
@@ -21359,56 +21261,56 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallAttributionStateStore.swift",
       "kind": "StringLiteral",
-      "offset": 2223,
+      "offset": 2051,
       "length": 35,
       "value": "\"kixo_install_attribution_state_v1\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallAttributionStateStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 2537,
+      "offset": 2365,
       "length": 3,
       "value": "365"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallAttributionStateStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 2543,
+      "offset": 2371,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallAttributionStateStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 2548,
+      "offset": 2376,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallAttributionStateStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 2553,
+      "offset": 2381,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallEmissionCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 486,
+      "offset": 491,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallEmissionCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 893,
+      "offset": 898,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallEmissionCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 934,
+      "offset": 939,
       "length": 5,
       "value": "false"
     },
@@ -21429,77 +21331,70 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 1936,
+      "offset": 1822,
       "length": 9,
       "value": "\"not_run\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 1973,
+      "offset": 1859,
       "length": 13,
       "value": "\"unavailable\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 2070,
-      "length": 11,
-      "value": "\"opted_out\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
-      "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 1956,
       "length": 10,
       "value": "\"disabled\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 2142,
+      "offset": 1992,
       "length": 11,
       "value": "\"validated\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 2028,
       "length": 10,
       "value": "\"replayed\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 2215,
+      "offset": 2065,
       "length": 13,
       "value": "\"invalid_sig\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 2256,
+      "offset": 2106,
       "length": 14,
       "value": "\"wrong_bundle\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 2293,
+      "offset": 2143,
       "length": 8,
       "value": "\"absent\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "StringLiteral",
-      "offset": 2323,
+      "offset": 2173,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/InstallValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2956,
+      "offset": 2716,
       "length": 5,
       "value": "false"
     },
@@ -21569,420 +21464,385 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 1111,
-      "length": 28,
-      "value": "\"io.kixo.privacy-transition\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1312,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1362,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
-      "kind": "StringLiteral",
-      "offset": 2009,
+      "offset": 1242,
       "length": 33,
       "value": "\"no_session_\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 2041,
+      "offset": 1274,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Array",
-      "offset": 5691,
+      "offset": 4924,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5746,
+      "offset": 4979,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Array",
-      "offset": 6251,
+      "offset": 5484,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 6593,
+      "offset": 5826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 7280,
+      "offset": 6508,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 7334,
+      "offset": 6562,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 8051,
+      "offset": 7279,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 8103,
+      "offset": 7331,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 8738,
+      "offset": 7966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 8886,
+      "offset": 8114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 9539,
+      "offset": 8767,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 9732,
+      "offset": 8960,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 18426,
+      "offset": 17910,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 18598,
+      "offset": 18082,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 19009,
+      "offset": 18493,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 24210,
+      "offset": 23555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Array",
-      "offset": 24562,
+      "offset": 23907,
       "length": 39,
       "value": "[5, 10, 20, 30, 60, 60, 60, 60, 60, 60]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 24636,
+      "offset": 23981,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 24696,
+      "offset": 24041,
       "length": 24,
       "value": "\"io.kixo.config-refresh\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 25413,
+      "offset": 24758,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 25418,
+      "offset": 24763,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 25862,
+      "offset": 25072,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 25922,
+      "offset": 25132,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 25990,
+      "offset": 25200,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 31568,
+      "offset": 30482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 48999,
+      "offset": 46639,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Array",
-      "offset": 49108,
+      "offset": 46748,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 52596,
-      "length": 14,
-      "value": "\"kixo_opt_out\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
-      "kind": "StringLiteral",
-      "offset": 59122,
+      "offset": 52329,
       "length": 6,
       "value": "\"idfa\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 59138,
+      "offset": 52345,
       "length": 6,
       "value": "\"gaid\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 59154,
+      "offset": 52361,
       "length": 6,
       "value": "\"rdid\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 60239,
+      "offset": 53446,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 60248,
+      "offset": 53455,
       "length": 7,
       "value": "\"phone\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 60257,
+      "offset": 53464,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 60265,
+      "offset": 53472,
       "length": 12,
       "value": "\"first_name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 60279,
+      "offset": 53486,
       "length": 11,
       "value": "\"last_name\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 60292,
+      "offset": 53499,
       "length": 12,
       "value": "\"avatar_url\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 62211,
+      "offset": 55418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 62255,
+      "offset": 55462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Array",
-      "offset": 62303,
+      "offset": 55510,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 65615,
+      "offset": 58732,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 67708,
+      "offset": 60825,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 69439,
+      "offset": 62556,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 71377,
+      "offset": 64494,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 80506,
+      "offset": 73241,
       "length": 12,
       "value": "\"foreground\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "Dictionary",
-      "offset": 100589,
+      "offset": 83999,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "StringLiteral",
-      "offset": 101961,
+      "offset": 85371,
       "length": 6,
       "value": "\"info\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 108802,
+      "offset": 92212,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 170227,
+      "offset": 150013,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 172879,
+      "offset": 152179,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 172919,
+      "offset": 168024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 188954,
+      "offset": 172972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "BooleanLiteral",
-      "offset": 193948,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
-      "kind": "BooleanLiteral",
-      "offset": 200053,
+      "offset": 179077,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Kixo.swift",
       "kind": "IntegerLiteral",
-      "offset": 261529,
+      "offset": 237835,
       "length": 1,
       "value": "0"
     },
@@ -22059,7 +21919,7 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Attribution\/KixoSKAN.swift",
       "kind": "BooleanLiteral",
-      "offset": 9396,
+      "offset": 9394,
       "length": 5,
       "value": "false"
     },
@@ -22416,23 +22276,37 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/OCRExtractor.swift",
       "kind": "Array",
-      "offset": 3207,
+      "offset": 3150,
       "length": 30,
       "value": "[\"en\", \"ru\", \"es\", \"de\", \"fr\"]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/OCRExtractor.swift",
       "kind": "FloatLiteral",
-      "offset": 3273,
+      "offset": 3216,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PIIFilter.swift",
       "kind": "Array",
-      "offset": 9384,
+      "offset": 9203,
       "length": 1357,
       "value": "[(\"[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\", false), (\"\\+?\\d[\\d\\s().-]{8,}\\d\", false), (\"\\b(?:\\d[ -]?){12,18}\\d\\b\", true), (\"\\b\\d{3}[- ]\\d{2}[- ]\\d{4}\\b\", false), (\"\\b[A-Z]{2}\\d{2}[A-Z0-9]{11,30}\\b\", false), (\"\\beyJ[A-Za-z0-9_-]+\\.eyJ[A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+\\b\", false), (\"@[A-Za-z0-9_.]{3,30}\", false)]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PendingUploadJournal.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 20,
+      "value": "\".upload-intents-v1\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PendingUploadJournal.swift",
+      "kind": "Dictionary",
+      "offset": 1048,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PostFrameScheduler.swift",
@@ -22443,64 +22317,85 @@
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2325,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "IntegerLiteral",
-      "offset": 5305,
+      "offset": 5572,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "IntegerLiteral",
-      "offset": 5558,
+      "offset": 5825,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "IntegerLiteral",
-      "offset": 5758,
+      "offset": 6025,
       "length": 26,
       "value": "14695981039346656037"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "IntegerLiteral",
-      "offset": 5827,
+      "offset": 6094,
       "length": 17,
       "value": "1099511628211"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "Dictionary",
-      "offset": 9217,
+      "offset": 9484,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "StringLiteral",
-      "offset": 15805,
+      "offset": 16072,
       "length": 18,
       "value": "\"cellular_blocked\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "StringLiteral",
-      "offset": 16065,
+      "offset": 16546,
+      "length": 21,
+      "value": "\"network_unavailable\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
+      "kind": "StringLiteral",
+      "offset": 16813,
+      "length": 27,
+      "value": "\"resource_pressure_blocked\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
+      "kind": "StringLiteral",
+      "offset": 17082,
       "length": 16,
       "value": "\"unchanged_skip\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "StringLiteral",
-      "offset": 16531,
+      "offset": 17548,
       "length": 12,
       "value": "\"video_skip\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/PreCaptureScan.swift",
       "kind": "StringLiteral",
-      "offset": 16802,
+      "offset": 17819,
       "length": 11,
       "value": "\"throttled\""
     },
@@ -22612,1113 +22507,1463 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration\/RemoteConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 28746,
+      "offset": 28362,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6014,
+      "offset": 605,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 653,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15656,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6557,
+      "offset": 16199,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7074,
+      "offset": 16716,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7414,
+      "offset": 17056,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8268,
+      "offset": 17910,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8994,
+      "offset": 18636,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11138,
+      "offset": 20780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "FloatLiteral",
-      "offset": 11817,
+      "offset": 21459,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14112,
+      "offset": 23754,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15423,
+      "offset": 25065,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15994,
+      "offset": 25636,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16297,
+      "offset": 25939,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16619,
+      "offset": 26261,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17241,
+      "offset": 26883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18130,
+      "offset": 27774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18604,
+      "offset": 28248,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19108,
+      "offset": 28752,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20470,
+      "offset": 30114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21711,
+      "offset": 31355,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21914,
+      "offset": 31558,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "FloatLiteral",
-      "offset": 22810,
+      "offset": 32454,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "FloatLiteral",
-      "offset": 23542,
+      "offset": 33186,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23735,
+      "offset": 33379,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24194,
+      "offset": 33838,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 24939,
+      "offset": 34583,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25560,
+      "offset": 36282,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26440,
+      "offset": 37504,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37551,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27662,
+      "offset": 37826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27709,
+      "offset": 38266,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 38317,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38749,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28145,
+      "offset": 39494,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28480,
+      "offset": 39939,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29225,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29670,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29850,
+      "offset": 40119,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Dictionary",
-      "offset": 31909,
+      "offset": 42219,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 32846,
-      "length": 139,
-      "value": "[\"capture_slot_full\", \"no_signed_url\", \"encode_failed\", \"oversize_frame\", \"gcs_4xx\", \"staging_failed\", \"pool_empty\"]"
+      "offset": 43883,
+      "length": 183,
+      "value": "[\"capture_slot_full\", \"no_signed_url\", \"encode_failed\", \"oversize_frame\", \"gcs_4xx\", \"staging_failed\", \"pool_empty\", \"snapshot_failed\", \"event_refused\"]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 33528,
+      "offset": 44609,
       "length": 71,
       "value": "[\"oversize_structural\", \"oversize_ocr\", \"oversize_tile\"]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 34536,
-      "length": 111,
-      "value": "[\"throttled\", \"unchanged_skip\", \"video_skip\", \"scrollend_throttled\", \"cellular_blocked\"]"
+      "offset": 46054,
+      "length": 171,
+      "value": "[\"throttled\", \"unchanged_skip\", \"video_skip\", \"scrollend_throttled\", \"cellular_blocked\", \"network_unavailable\", \"resource_pressure_blocked\"]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35915,
+      "offset": 47493,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35963,
+      "offset": 47541,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Dictionary",
-      "offset": 38554,
+      "offset": 63655,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38736,
+      "offset": 63837,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 39021,
+      "offset": 64122,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 40813,
+      "offset": 65914,
       "length": 23,
       "value": "\"io.kixo.replay.worker\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 41365,
+      "offset": 66466,
       "length": 24,
       "value": "\"io.kixo.replay.network\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67455,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 67854,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68151,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68443,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 68533,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 42026,
-      "length": 20,
-      "value": "\"io.kixo.replay.ocr\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42590,
-      "length": 1,
-      "value": "4"
+      "offset": 86701,
+      "length": 12,
+      "value": "\"background\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 43183,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 43456,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 43753,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 44023,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 44113,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 72193,
+      "offset": 86751,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 79045,
+      "offset": 99828,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 108046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 80144,
+      "offset": 109145,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 83834,
+      "offset": 112835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 106673,
+      "offset": 145007,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 108025,
+      "offset": 146359,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 132324,
+      "offset": 179599,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 132665,
+      "offset": 179940,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 175232,
+      "offset": 232279,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 263149,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "Array",
+      "offset": 263220,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 275429,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "Array",
+      "offset": 284368,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 202896,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "Array",
-      "offset": 202957,
+      "offset": 284429,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 202993,
+      "offset": 284465,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 203031,
+      "offset": 284503,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 203070,
+      "offset": 284542,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 203967,
+      "offset": 286481,
       "length": 5,
       "value": "\"pre\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 204032,
+      "offset": 286546,
       "length": 6,
       "value": "\"post\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 204098,
+      "offset": 286612,
       "length": 12,
       "value": "\"structural\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 204170,
+      "offset": 286684,
       "length": 5,
       "value": "\"ocr\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "Array",
+      "offset": 287331,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 287367,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "Dictionary",
+      "offset": 287415,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287724,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287730,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287829,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 204525,
-      "length": 74,
+      "offset": 287849,
+      "length": 26,
+      "value": "\"expired signed URL lease\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 287894,
+      "length": 26,
+      "value": "\"no post-frame signed URL\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 287939,
+      "length": 59,
       "value": "\"seq \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 204536,
+      "offset": 287950,
       "length": 1,
-      "value": "\": no post-frame signed URL — emitting metadata-only + refill\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 205364,
-      "length": 1,
-      "value": "1"
+      "value": "\": \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 205518,
+      "offset": 287961,
+      "length": 8,
+      "value": "\" — emitting metadata-only + refill\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 288028,
       "length": 15,
       "value": "\"no_signed_url\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 206227,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 206254,
-      "length": 1,
-      "value": "0"
+      "kind": "StringLiteral",
+      "offset": 288310,
+      "length": 18,
+      "value": "\"cellular_blocked\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 207248,
+      "offset": 288384,
+      "length": 21,
+      "value": "\"network_unavailable\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 289120,
       "length": 12,
       "value": "\"image\/heic\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 207749,
-      "length": 1,
-      "value": "1"
+      "kind": "StringLiteral",
+      "offset": 289640,
+      "length": 16,
+      "value": "\"staging_failed\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 207812,
+      "offset": 289768,
       "length": 65,
       "value": "\"seq \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 207823,
+      "offset": 289779,
       "length": 1,
       "value": "\": pre frame over \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 207846,
+      "offset": 289802,
       "length": 1,
       "value": "\"B cap after ladder — dropped\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 207906,
+      "offset": 289867,
       "length": 16,
       "value": "\"oversize_frame\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 208851,
+      "offset": 290654,
       "length": 12,
       "value": "\"image\/heic\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 210438,
-      "length": 1,
-      "value": "1"
+      "kind": "StringLiteral",
+      "offset": 291176,
+      "length": 16,
+      "value": "\"staging_failed\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 291234,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 210501,
+      "offset": 291349,
       "length": 72,
       "value": "\"seq \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 210512,
+      "offset": 291360,
       "length": 1,
       "value": "\": post frame over \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 210536,
+      "offset": 291384,
       "length": 1,
       "value": "\"B cap after ladder — metadata-only\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 210602,
+      "offset": 291455,
       "length": 16,
       "value": "\"oversize_frame\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 291509,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 211224,
+      "offset": 291809,
       "length": 58,
       "value": "\"seq \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 211235,
+      "offset": 291820,
       "length": 1,
       "value": "\": structural JSON over \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 211264,
+      "offset": 291849,
       "length": 1,
       "value": "\"B cap — dropped\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 211311,
+      "offset": 291901,
       "length": 21,
       "value": "\"oversize_structural\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 211846,
+      "offset": 292224,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 212834,
-      "length": 1,
-      "value": "0"
+      "kind": "BooleanLiteral",
+      "offset": 292700,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 214182,
+      "offset": 292758,
+      "length": 16,
+      "value": "\"staging_failed\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "FloatLiteral",
+      "offset": 293480,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 294102,
       "length": 62,
       "value": "\"seq \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 214193,
+      "offset": 294113,
       "length": 1,
       "value": "\": tile \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 214214,
+      "offset": 294134,
       "length": 4,
       "value": "\" over \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 214226,
+      "offset": 294146,
       "length": 1,
       "value": "\"B cap — dropped\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 214286,
+      "offset": 294202,
       "length": 15,
       "value": "\"oversize_tile\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 214886,
+      "offset": 294649,
       "length": 12,
       "value": "\"image\/heic\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 215562,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "FloatLiteral",
-      "offset": 215926,
-      "length": 3,
-      "value": "2.0"
+      "kind": "StringLiteral",
+      "offset": 295232,
+      "length": 16,
+      "value": "\"staging_failed\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 216597,
+      "offset": 295817,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 216641,
+      "offset": 295861,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 217716,
-      "length": 70,
-      "value": "\"seq \""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "StringLiteral",
-      "offset": 217727,
-      "length": 1,
-      "value": "\": ocr semaphore full, skipping sidecar (event still ships)\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 218017,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 218423,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "StringLiteral",
-      "offset": 219301,
+      "offset": 296347,
       "length": 54,
       "value": "\"seq \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 219312,
+      "offset": 296358,
       "length": 1,
       "value": "\": ocr sidecar over \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 219337,
+      "offset": 296383,
       "length": 1,
       "value": "\"B cap — dropped\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 219398,
+      "offset": 296439,
       "length": 14,
       "value": "\"oversize_ocr\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 220022,
+      "offset": 296761,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 221064,
+      "offset": 297286,
+      "length": 16,
+      "value": "\"staging_failed\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 298305,
+      "length": 15,
+      "value": "\"no_signed_url\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 298358,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298629,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298667,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298999,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 299026,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 299062,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 299309,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 299343,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 300105,
+      "length": 16,
+      "value": "\"staging_failed\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300132,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300138,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 300208,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "Array",
+      "offset": 301940,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 301975,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 302765,
+      "length": 16,
+      "value": "\"staging_failed\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 302792,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 302798,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 302883,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 302987,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303179,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303319,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 304356,
+      "length": 18,
+      "value": "\"event_queue_full\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 304385,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 304391,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 305169,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 305202,
+      "length": 15,
+      "value": "\"event_refused\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 305228,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 305367,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 306200,
       "length": 5,
       "value": "\"pre\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 221140,
+      "offset": 306276,
       "length": 6,
       "value": "\"post\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 221217,
+      "offset": 306353,
       "length": 12,
       "value": "\"structural\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "StringLiteral",
-      "offset": 221300,
+      "offset": 306436,
       "length": 5,
       "value": "\"ocr\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 221627,
+      "offset": 306488,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 221804,
+      "offset": 306535,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 307005,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 225371,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "StringLiteral",
-      "offset": 225438,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "StringLiteral",
-      "offset": 225476,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 225515,
+      "offset": 307048,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "IntegerLiteral",
-      "offset": 237828,
+      "offset": 309967,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 310034,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 310072,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310111,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 313398,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 313465,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "StringLiteral",
+      "offset": 313503,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 313542,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 321539,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "Array",
-      "offset": 239805,
+      "offset": 323557,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayController.swift",
       "kind": "BooleanLiteral",
-      "offset": 241465,
+      "offset": 325217,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "FloatLiteral",
-      "offset": 2015,
+      "offset": 2306,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 2044,
+      "offset": 2335,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 2402,
+      "offset": 2693,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 2665,
+      "offset": 3517,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4135,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 2777,
+      "offset": 4247,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 3287,
+      "offset": 4757,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 3403,
+      "offset": 4873,
       "length": 6,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 3524,
+      "offset": 4994,
       "length": 30,
       "value": "\"io.kixo.replay-events.sqlite\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "BooleanLiteral",
-      "offset": 3622,
+      "offset": 5092,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "BooleanLiteral",
-      "offset": 3741,
+      "offset": 5211,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "Dictionary",
-      "offset": 3805,
+      "offset": 5275,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 19225,
-      "length": 66,
-      "value": "\"DELETE FROM replay_events WHERE attempt_count >= \""
+      "offset": 23770,
+      "length": 137,
+      "value": "\"    UPDATE replay_events\n    SET flag = 2\n    WHERE flag = 0 AND attempt_count >= \""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 19289,
+      "offset": 23894,
       "length": 1,
       "value": "\";\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 19609,
+      "offset": 24393,
       "length": 201,
       "value": "\"    SELECT id, event_id, session_id, project_id, api_key, api_host, installation_id, payload\n    FROM replay_events\n    WHERE flag = 0 ORDER BY time ASC LIMIT ?;\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19853,
+      "offset": 24637,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19929,
+      "offset": 24713,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "Dictionary",
-      "offset": 20363,
+      "offset": 25147,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 20470,
+      "offset": 25254,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 20550,
+      "offset": 25334,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 20626,
+      "offset": 25410,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 20702,
+      "offset": 25486,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 20778,
+      "offset": 25562,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 20855,
+      "offset": 25639,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 20935,
+      "offset": 25719,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 21329,
+      "offset": 26113,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 21388,
+      "offset": 26172,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 21398,
+      "offset": 26182,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 21752,
+      "offset": 26536,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 21823,
+      "offset": 26607,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 21890,
+      "offset": 26674,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "Array",
-      "offset": 22285,
+      "offset": 27069,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplayEventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 36668,
+      "offset": 44158,
       "length": 2,
       "value": "-1"
     },
@@ -23746,21 +23991,21 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration\/ReplayPolicyPersistence.swift",
       "kind": "BooleanLiteral",
-      "offset": 5524,
+      "offset": 5423,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Configuration\/ReplayPolicyPersistence.swift",
       "kind": "BooleanLiteral",
-      "offset": 12692,
+      "offset": 12580,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ReplaySignpost.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 2617,
       "length": 16,
       "value": "\"io.kixo.replay\""
     },
@@ -23958,7 +24203,7 @@
       "kind": "StringLiteral",
       "offset": 130,
       "length": 8,
-      "value": "\"1.0.19\""
+      "value": "\"1.0.20\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Storage\/SQLiteEventStore.swift",
@@ -23984,7 +24229,7 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Storage\/SQLiteEventStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 21947,
+      "offset": 20469,
       "length": 2,
       "value": "-1"
     },
@@ -24151,29 +24396,22 @@
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/AutoTrack\/ScreenshotCapture.swift",
-      "kind": "Dictionary",
-      "offset": 519,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/AutoTrack\/ScreenshotCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 1131,
+      "offset": 1068,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/AutoTrack\/ScreenshotCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 1172,
+      "offset": 1109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/AutoTrack\/ScreenshotCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 19061,
+      "offset": 17839,
       "length": 1,
       "value": "0"
     },
@@ -24312,78 +24550,85 @@
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 626,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "Dictionary",
-      "offset": 4795,
+      "offset": 6805,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4832,
+      "offset": 6842,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 10301,
+      "offset": 14704,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 10330,
+      "offset": 14733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 10358,
+      "offset": 14761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "Dictionary",
-      "offset": 10396,
+      "offset": 14799,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 12577,
+      "offset": 16980,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 14028,
+      "offset": 21966,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "Dictionary",
-      "offset": 14068,
+      "offset": 22006,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 22631,
+      "offset": 30570,
       "length": 6,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/SignedURLClient.swift",
       "kind": "Array",
-      "offset": 23407,
+      "offset": 31346,
       "length": 12,
       "value": "[0.12, 0.08]"
     },
@@ -24397,23 +24642,44 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/Storage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1612,
+      "offset": 3645,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/Storage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1617,
+      "offset": 3650,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/Storage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1624,
+      "offset": 3657,
       "length": 4,
       "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/Storage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4944,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/Storage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5193,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/Storage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5623,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/StructuralSnapshot.swift",
@@ -24593,7 +24859,21 @@
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ThermalBackoff.swift",
       "kind": "BooleanLiteral",
-      "offset": 1962,
+      "offset": 1950,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ThermalBackoff.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1995,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Replay\/ThermalBackoff.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2029,
       "length": 5,
       "value": "false"
     },
@@ -24606,71 +24886,57 @@
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
-      "kind": "Dictionary",
-      "offset": 2543,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2578,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 2795,
+      "offset": 2659,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 11157,
+      "offset": 9915,
       "length": 12,
       "value": "\"project_id\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 11192,
+      "offset": 9950,
       "length": 9,
       "value": "\"api_key\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 11275,
+      "offset": 10033,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 11315,
+      "offset": 10073,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 11353,
+      "offset": 10111,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 11390,
+      "offset": 10148,
       "length": 12,
       "value": "\"release_id\""
     },
     {
       "filePath": "\/Users\/kukitz\/WWDA\/src\/kuicktech\/godanalytics\/kixo-ios-sdk\/Sources\/Kixo\/Transport.swift",
       "kind": "StringLiteral",
-      "offset": 11465,
+      "offset": 10223,
       "length": 9,
       "value": "\"sent_at\""
     },

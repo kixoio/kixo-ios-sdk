@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.20] — 2026-08-10
+
+Crash-durable replay artifact delivery. Every claimed artifact is written to
+disk and owned by a durable upload intent before the replay event is allowed to
+name it, so a process killed between the event and its upload no longer loses
+frames the event already claims. `reset()` seals the previous replay losslessly
+with `identity_reset` instead of discarding it.
+
+Certified against DEV from SDK 89162e5: the pre-reset session sealed with
+`identity_reset`, every claimed artifact verified present in storage, and the
+metadata outbox fully delivered.
+
+---
+
 ## [1.0.19] — 2026-08-08
 
 Replay frame-loss fixes. Certified against DEV with replay verification
