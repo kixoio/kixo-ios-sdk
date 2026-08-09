@@ -19,6 +19,8 @@ Certified against DEV from SDK 89162e5: the pre-reset session sealed with
 `identity_reset`, every claimed artifact verified present in storage, and the
 metadata outbox fully delivered.
 
+**XCFramework tree sha256:** `d5ed4296818f9f86e87acbb92a8c4d3ed3a971414a66772eadfd327bf683e623`.
+
 ---
 
 ## [1.0.19] — 2026-08-08
