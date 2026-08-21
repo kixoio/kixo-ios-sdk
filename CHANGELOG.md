@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.21] — 2026-08-21
+
+Bounded replay identity transitions. A `/replay/session/start` whose response is
+lost — offline, or a transient server refusal — no longer parks replay: the
+retry is capped and reuses the original opening's nonce so a request that did
+commit server-side is reconciled instead of replayed, and an ambiguous opening
+can no longer leave the predecessor session OPEN or mint a duplicate zero-frame
+session. Concurrent `identify` / `setUserProperty` / `setUserProperties` calls
+now emit in a single total order, so an older value can no longer land after a
+newer one.
+
+Certified against DEV in artifact mode from SDK 115a3d61f9ed8005d19bb655b02d75aa9daa0332
+with test app b6f87111e8ccca60e38c75b8a0bece344a54f0b8: the full demo journey,
+Universal Link cold and warm resolution, the identity/reset boundary, and the
+replay storage gate, which verified all 46 claimed artifacts against the bytes
+actually stored. XCFramework tree hash
+970ba445d0e672928b20dae7122a3302fd5fc9cd737f7090a5b80fe364c1ffc4 (27 files).
+
+---
+
 ## [1.0.20] — 2026-08-10
 
 Crash-durable replay artifact delivery. Every claimed artifact is written to
